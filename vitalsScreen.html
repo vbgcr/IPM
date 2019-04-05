@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html>
+  <head>
+
+    <title>iGo</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "time.js"></script>
+    <script src = "switch.js"></script>
+  </head>
+  <body onload = "getTime()">
+
+    <div id = "screen">
+      <svg id = "button-div">
+        <rect id = "button1" width = "10" height = "25" style ="fill:'black'" onclick = "relock()" style = "cursor: pointer">
+      </svg>
+
+      <svg id = "button-div2">
+        <rect id = "button2" width = "30" height = "10" style ="fill: black" style = "cursor: pointer" onclick="goToHomeScreen()">
+      </svg>
+
+      <div id = "screentop">
+        <p id = "time"></p>
+      </div>
+
+      <div id = "mainscreen">
+        <table id = "grid-vitals" width = 100%>
+          <tr>
+            <td allign = "center">Heart Rate: 22bpm</td>
+          </tr>
+          <tr>
+            <td allign = "center">Blood Pressure: valores</td>
+          </tr>
+
+        <table id = "grid-faces" width = "100%">
+          <tr>
+            <td class = "face" id = "screen-division" width = "33%" align="center">
+              <img src = "images/happy.png"  width="45">
+            </td>
+            <td class = "face" id = "screen-division" width = "33%" align="center">
+              <img src = "images/surprised.png"  width="45">
+            </td>
+            <td class = "face" id = "screen-division" width = "33%" align="center">
+              <img src = "images/sad.png"  width="45">
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </body>
+</html>
