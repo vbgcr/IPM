@@ -1,0 +1,29 @@
+<!DOCTYPE = "html">
+<html>
+    <head>
+
+        <title>iGo</title>
+        <link rel = "stylesheet" href = "style.css">
+        <script src = "time.js"></script>
+        <script src = "switch.js"></script>
+
+    </head>
+    <body onload = "getTime()">
+
+        <div id = "screen">
+            <svg id = "button-div">
+                <rect id = "button1" width = "10" height = "25" style ="fill:'black'" onclick = "relock()" style = "cursor: pointer">
+            </svg>
+
+            <svg id = "button-div2">
+                <rect id = "button2" width = "30" height = "10" style ="fill: black" style = "cursor: pointer" onclick="goToHomeScreen()">
+            </svg>
+
+            <div id = "screentop">
+                <p id = "time"></p>
+            </div>
+
+        </div>
+
+    </body>
+</html>

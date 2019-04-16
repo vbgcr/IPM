@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>iGo</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "time.js"></script>
+    <script src = "timeLocked.js"></script>
+    <script src = "unlock.js"></script>
+  </head>
+
+  <body onload = "getTime();" "getTimeLocked();" "getDateLocked();">
+
+    <div id = "buttons">
+
+      <svg id = "button-div">
+        <rect id = "button1" width = "10" height = "25" style ="fill:'black'" onclick = "relock()">
+      </svg>
+
+      <svg id = "button-div2">
+        <rect id = "button2" width = "30" height = "10" style ="fill: black">
+      </svg>
+    </div>
+
+    <div id = "lockedScreen" onclick = "unlock()">
+
+      <div id = "screentop"></div>
+
+      <div id = "mainscreen"></div>
+        <div id = "timeLocked"></div>
+        <div id = "dateLocked"></div>
+
+      </div>
+
+    </div>
+
+    <div id = "screen">
+
+      <div id = "screentop">
+        <p id = "time"></p>
+      </div>
+
+      <div id = "mainscreen">
+        <table id = "app-grid" width = "100%">
+          <tr>
+            <td class = "icon" id = "screen-division" width = "25%" align="center">
+              <img src = "images/redpinwhitecircle.png" width="60">
+            </td>
+            <td id = "screen-division" width = "25%" align="center">
+              <img src = "images/redGroupWhiteCircle.png" width="60">
+            </td>
+          </tr>
+          <tr>
+            <td  id = "screen-division" width = "25%" align="center">
+              <img src = "images/redHeartWhiteCircle.png" width="60">
+            </td>
+            <td id = "screen-division" width = "25%" align="center">
+              <img src = "images/redSettingsWhiteCircle.png" width="60">
+            </td>
+          </tr>
+      </div>
+    </div>
+
+  </body>
+
+</html>

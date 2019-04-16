@@ -1,0 +1,277 @@
+body {
+  font-family: "Source Sans Pro", Helvetica, Arial;
+  font-weight: lighter;
+}
+
+#screen{
+  width: 5cm;
+  height: 5cm;
+  display: block;
+  top: 50%;
+  left: 50%;
+  border: 5px solid black;
+  border-radius: 0.5cm;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: #B5B3B7;
+}
+
+#lockedScreen{
+  width: 5cm;
+  height: 5cm;
+  display: block;
+  top: 50%;
+  left: 50%;
+  border: 5px solid black;
+  border-radius: 0.5cm;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: #B5B3B7;
+}
+
+#button-div{
+  display: block;
+  position: absolute;
+  left: 102%;
+  margin-top: 24%;
+  z-index: 10;
+}
+
+#button-div2{
+  display: block;
+  position: absolute;
+  left: 44%;
+  top: 102%;
+  z-index: 10;
+}
+
+#mainscreen{
+  height: 4.5cm;
+  width: inherit;
+  position: fixed;
+  top: 0.5cm;
+}
+
+#app-grid{
+  height: 4.5cm;
+  width: inherit;
+  table-layout: fixed;
+}
+
+#screentop{
+  height: 0.5cm;
+  width: inherit;
+}
+
+
+#time{
+  height: inherit;
+  width: 50%;
+  position: fixed;
+  top: -7px;
+  right: -4px;
+  font-size: 0.3cm;
+  color: Black;
+  text-align: center;
+  z-index: 20;
+  font-weight: bold;
+}
+
+#timeLocked{
+  height: inherit;
+  width: 50%;
+  position: fixed;
+  top: 0.4cm;
+  left: 1.3cm;
+  font-size: 35px;
+  color: black;
+  text-align: center;
+  z-index: 20;
+  font-weight: bold;
+
+}
+
+#dateLocked{
+  height: inherit;
+  width: 50%;
+  position: fixed;
+  top: 1.4cm;
+  left: 1.3cm;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  z-index: 20;
+  font-weight: bold;
+}
+
+#slideToUnlock{
+  height: inherit;
+  width: 50%;
+  position: fixed;
+  top: 4cm;
+  left: 1.4cm;
+  font-size: 13px;
+  color: black;
+  text-align: center;
+  z-index: 20;
+}
+
+#grid-faces{
+  height: 2cm;
+  width: inherit;
+}
+
+#gettingVitals{
+  font-size: 0.6cm;
+  text-align: center;
+  position: relative;
+  top: 1.5cm;
+}
+
+#face{
+  table-layout: fixed;
+  width: 5em;
+  height: 5em;
+  size:5em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#grid-vitals{
+  height: 2cm;
+  margin-top: 0.5cm;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+#settingsLine1{
+  height: 1.5cm;
+}
+
+#settingsLine2{
+  height: 0.8cm;
+}
+
+#dateAndTimeArrow{
+  cursor: pointer;
+}
+
+#settingsLine3{
+  height: 1.8cm;
+}
+
+#themeArrow{
+  cursor: pointer;
+}
+
+#siren{
+  margin-top: 1cm;
+}
+
+/*SHAKE ANIMATION*/
+
+@-webkit-keyframes spaceboots {
+  0% {
+    -webkit-transform: translate(2px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(0px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(2px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.shake {
+  -webkit-animation-name: spaceboots;
+  -webkit-animation-duration: 0.8s;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+/*SHAKE ANIMATION*/
+
+/*TOGGLE BUTTON*/
+
+.cmn-toggle{
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+
+.cmn-toggle + label{
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+ input.cmn-toggle-round-flat + label{
+   padding: 2px;
+   width: 36px; /*mudar pa 40*/
+   height: 18px; /*mudar pa 20*/
+   background-color: #dddddd;
+   border-radius: 60px; /*nao mudar*/
+   transition: background 0.4s;
+ }
+ input.cmn-toggle-round-flat + label:before,
+ input.cmn-toggle-round-flat + label:after{
+   display: block;
+   position: absolute;
+   content: "";
+ }
+ input.cmn-toggle-round-flat + label:before{
+   /*nao mudar*/
+   top: 2px;
+   left: 2px;
+   bottom: 2px;
+   right: 2px;
+   /*nao mudar*/
+   background-color: #fff;
+   border-radius: 60px; /*nao mudar*/
+   transition: background 0.4s;
+ }
+ input.cmn-toggle-round-flat + label:after{
+   top: 4px;
+   left: 4px;
+   bottom: 4px;
+   width: 14px; /*muda o tamanho da bolinha*/
+   background-color: #dddddd;
+   border-radius: 52px;
+   transition: margin 0.4s, background 0.4s;
+ }
+ input.cmn-toggle-round-flat:checked + label{
+   background-color: #101110;
+ }
+ input.cmn-toggle-round-flat:checked + label:after{
+   margin-left: 18px; /*tamanho da transicao*/
+   background-color: #101110;
+ }
+
+ /*TOGGLE BUTTON*/
