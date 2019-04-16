@@ -7,9 +7,10 @@
     <script src = "time.js"></script>
     <script src = "switch.js"></script>
   </head>
-  <body onload = "getTime()">
+  <body onload = "getTime() ; isDoNotDisturbOn()">
 
-    <div id = "screen">
+  <div id = "device">
+    <div id = "buttons">
       <svg id = "button-div">
         <rect id = "button1" width = "10" height = "25" style ="fill:'black'" onclick = "relock()" style = "cursor: pointer">
       </svg>
@@ -17,35 +18,76 @@
       <svg id = "button-div2">
         <rect id = "button2" width = "30" height = "10" style ="fill: black" style = "cursor: pointer" onclick="goToHomeScreen()">
       </svg>
+    </div>
+    <div id = "screen">
 
       <div id = "screentop">
         <p id = "time"></p>
-      </div>
-
-      <div id = "mainscreen">
-        <table id = "grid-vitals" width = 100%>
+        <table id = "screentopIcons" width = "15%">
           <tr>
-            <td allign = "center">Heart Rate: Medium</td>
-          </tr>
-          <tr>
-            <td allign = "center">Blood Pressure: Medium</td>
-          </tr>
-
-        <table id = "grid-faces" width = "100%">
-          <tr>
-            <td class = "face" id = "screen-division" width = "33%" align="center">
-              <img src = "images/happy.png"  width="45">
+            <td class = "smallIcon" id = "smallPin" width = "50%" allign = "center">
+              <img src = "images/pin.png" width="13">
             </td>
-            <td class = "face" id = "screen-division" width = "33%" align="center">
-              <img src = "images/surprisedYellow.png"  width="45">
-            </td>
-            <td class = "face" id = "screen-division" width = "33%" align="center">
-              <img src = "images/sad.png"  width="45">
+            <td class = "smallIcon" id = "smallDoNotDisturb" width = "50%" allign = "center">
+              <img src = "images/DoNotDisturb.png" width="13">
             </td>
           </tr>
         </table>
       </div>
 
+      <div id = "mainscreen">
+
+        <div id = "ambulanceMenu">
+          <div id = "text">
+            <span>Do you want to call an ambulance?</span>
+          </div>
+          <div id = "yesButton" onclick="openSecondAmbulanceMenu()">
+            <div id = "yesText">
+              <span>YES</span>
+            </div>
+          </div>
+          <div id = "noButton" onclick="closeAmbulanceMenu()">
+            <div id = "noText">
+              <span>NO</span>
+            </div>
+          </div>
+        </div>
+
+        <div id = "secondAmbulanceMenu">
+          <div id = "closeButton">
+            <img src="images/crossRed.png" width = "60" onclick="closeSecondAmbulanceMenu()">
+          </div>
+          <div id = "ambulanceImage" class = "shake">
+            <img src = "images/ambulance2.png" width = "60">
+          </div>
+          <div id = "text2" width="60">
+            <span>The ambulance is on its way!</span>
+          </div>
+        </div>
+
+        <table id = "grid-vitals" width = 100%>
+          <tr>
+            <td allign = "center">Heart Rate: 105bpm</td>
+          </tr>
+          <tr>
+            <td allign = "center">Blood Pressure: 130/80mmHg</td>
+          </tr>
+
+        <table id = "grid-faces" width = "100%">
+          <tr>
+            <td class = "face" id = "screen-division" width = "33%" align="center"></td>
+            <td class = "face" id = "screen-division" width = "33%" align="center">
+              <img src = "images/surprisedYellow.png"  width="45">
+            </td>
+            <td class = "face" id = "screen-division" width = "33%" align="center"></td>
+          </tr>
+        </table>
+        <div id = "ambulance">
+          <img src="images/ambulanceWhiteRed.png" width="80" onClick="callAmbulance()">
+        </div>
+      </div>
+
     </div>
+  </div>
   </body>
 </html>

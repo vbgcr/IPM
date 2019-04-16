@@ -15,7 +15,7 @@ function goToVitalsScreen(){
 }
 
 function waitForVitals(){
-  setTimeout(goToRealVitalsScreen, 5000);
+  setTimeout(goToRealVitalsScreen, 3000);
 }
 
 function goToRealVitalsScreen(){
@@ -31,14 +31,59 @@ function goToRealVitalsScreen(){
   }
 }
 
+
 function goToSettingsScreen(){
   document.location.href = "settings.html";
 }
 
-function goToDateAndTime(){
-  document.location.href = "dateAndTime.html";
+function turnOnDoNotDisturb(){
+  if(sessionStorage.getItem("doNotDisturbIsOn") == "visible"){
+    sessionStorage.setItem("doNotDisturbIsOn", "hidden");
+    document.getElementById("smallDoNotDisturb").style.visibility = "hidden";
+  }
+  else{
+    document.getElementById("smallDoNotDisturb").style.visibility = "visible"
+  }
+
 }
 
-function goToPointsOfInterest(){
-  document.location.href = "pointsOfInterest.html";
+function isDoNotDisturbOn(){
+  if(sessionStorage.getItem("doNotDisturbIsOn") == "visible"){
+    document.getElementById("smallDoNotDisturb").style.visibility = "visible";
+  }
+}
+
+function shareLocation(){
+  document.getElementById("smallPin").style.visibility = "visible";
+}
+
+function callAmbulance(){
+  document.getElementById("ambulanceMenu").style.visibility = "visible";
+  document.getElementById("yesButton").style.visibility = "visible";
+  document.getElementById("noButton").style.visibility = "visible";
+}
+
+function callAmbulanceBadVitals(){
+  setTimeout(callAmbulance, 3000);
+}
+
+function openSecondAmbulanceMenu(){
+  document.getElementById("ambulanceMenu").style.visibility = "hidden";
+  document.getElementById("yesButton").style.visibility = "hidden";
+  document.getElementById("noButton").style.visibility = "hidden";
+  document.getElementById("secondAmbulanceMenu").style.visibility = "visible";
+}
+
+function closeAmbulanceMenu(){
+  document.getElementById("ambulanceMenu").style.visibility = "hidden";
+  document.getElementById("yesButton").style.visibility = "hidden";
+  document.getElementById("noButton").style.visibility = "hidden";
+}
+
+function closeSecondAmbulanceMenu(){
+  document.getElementById("secondAmbulanceMenu").style.visibility = "hidden";
+}
+
+function openPointsOfInterest(){
+  document.location.href="pointsOfInterest.html";
 }
