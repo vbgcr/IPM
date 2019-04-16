@@ -34,3 +34,11 @@ function goToRealVitalsScreen(){
 function goToSettingsScreen(){
   document.location.href = "settings.html";
 }
+
+function goToDateAndTime(){
+  document.location.href = "dateAndTime.html";
+}
+
+function goToPointsOfInterest(){
+  document.location.href = "pointsOfInterest.html";
+}
