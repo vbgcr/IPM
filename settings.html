@@ -8,8 +8,18 @@
         <script src = "switch.js"></script>
 
     </head>
-    <body onload = "getTime()">
+    <body onload = "getTime() ; isDoNotDisturbOn()">
 
+    <div id = "device">
+      <div id = "buttons">
+        <svg id = "button-div">
+          <rect id = "button1" width = "10" height = "25" style ="fill:'black'" onclick = "relock()" style = "cursor: pointer">
+        </svg>
+
+        <svg id = "button-div2">
+          <rect id = "button2" width = "30" height = "10" style ="fill: black" style = "cursor: pointer" onclick="goToHomeScreen()">
+        </svg>
+      </div>
         <div id = "screen">
             <svg id = "button-div">
                 <rect id = "button1" width = "10" height = "25" style ="fill:'black'" onclick = "relock()" style = "cursor: pointer">
@@ -21,6 +31,16 @@
 
             <div id = "screentop">
                 <p id = "time"></p>
+                <table id = "screentopIcons" width = "15%">
+                  <tr>
+                    <td class = "smallIcon" id = "smallPin" width = "50%" allign = "center">
+                      <img src = "images/pin.png" width="13">
+                    </td>
+                    <td class = "smallIcon" id = "smallDoNotDisturb" width = "50%" allign = "center">
+                      <img src = "images/DoNotDisturb.png" width="13">
+                    </td>
+                  </tr>
+                </table>
             </div>
 
             <div id = "mainscreen">
@@ -36,7 +56,7 @@
 
                         <td>
                             <td class = "switch" width = "20%">
-                                <input id = "cmn-toggle-4" class = "cmn-toggle cmn-toggle-round-flat" type = "checkbox">
+                                <input id = "cmn-toggle-4" class = "cmn-toggle cmn-toggle-round-flat" type = "checkbox" onclick="turnOnDoNotDisturb()">
                                 <label for = "cmn-toggle-4"></label>
                             </td>
                         </td>
@@ -45,15 +65,16 @@
                 <table id = settingsLine2 width = "100%">
                   <tr>
                     <td class = "icon" id = "screen-division" width = "10%" align = "left">
-                        <img src = "images/DateAndTime.png" width = "17">
+                        <img src = "images/pin.png" width = "17">
                     </td>
 
                     <td width = "77%" align = "left">
-                        <span>Date And Time</span>
+                        <span>Share Location</span>
                     </td>
 
-                    <td class = "icon" id = "dateAndTimeArrow" width = "13%" align = "right" onClick = "goToDateAndTime()">
-                        <img src = "images/ArrowRight.png" width = "23">
+                    <td class = "switch" width = "20%">
+                        <input id = "cmn-toggle-3" class = "cmn-toggle cmn-toggle-round-flat" type = "checkbox" onclick="shareLocation()">
+                        <label for = "cmn-toggle-3"></label>
                     </td>
                   </tr>
                 </table>

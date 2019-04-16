@@ -11,6 +11,17 @@
   </head>
 
   <body onload = "getTime(); waitForVitals();">
+
+  <div id = "device">
+    <div id = "buttons">
+      <svg id = "button-div">
+        <rect id = "button1" width = "10" height = "25" style ="fill:'black'" onclick = "relock()" style = "cursor: pointer">
+      </svg>
+
+      <svg id = "button-div2">
+        <rect id = "button2" width = "30" height = "10" style ="fill: black" style = "cursor: pointer" onclick="goToHomeScreen()">
+      </svg>
+    </div>
     <div id = "screen">
       <svg id = "button-div">
         <rect id = "button1" width = "10" height = "25" style ="fill:'black'" onclick = "relock()" style = "cursor: pointer">
@@ -26,7 +37,11 @@
 
       <div id = "gettingVitals">
         <span>Getting vitals...</span>
-    </div>
+      </div>
 
+      <div id = "loadingClock">
+        <img src = "images/clock.gif" width="40" height="40">
+      </div>
+    </div>
   </body>
 </html>
