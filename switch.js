@@ -87,3 +87,41 @@ function closeSecondAmbulanceMenu(){
 function openPointsOfInterest(){
   document.location.href="pointsOfInterest.html";
 }
+
+function goToBarScreen(){
+  document.location.href = "bars.html";
+}
+
+function goToTransportsScreen(){
+  document.location.href = "publicTransports.html";
+}
+
+function openBusStopMenu1(){
+  document.getElementById("busStopMenu1").style.visibility = "visible";
+  document.getElementById("hoursBackButton1").style.visibility = "visible";
+}
+
+function closeBusStopMenu1(){
+  document.getElementById("busStopMenu1").style.visibility = "hidden";
+  document.getElementById("hoursBackButton1").style.visibility = "hidden";
+}
+
+function openBusStopMenu2(){
+  document.getElementById("busStopMenu2").style.visibility = "visible";
+  document.getElementById("hoursBackButton2").style.visibility = "visible";
+}
+
+function closeBusStopMenu2(){
+  document.getElementById("busStopMenu2").style.visibility = "hidden";
+  document.getElementById("hoursBackButton2").style.visibility = "hidden";
+}
+
+function openSubwayMenu1(){
+  document.getElementById("subwayMenu1").style.visibility = "visible";
+  document.getElementById("subwayBackButton1").style.visibility = "visible";
+}
+
+function closeSubwayMenu1(){
+  document.getElementById("subwayMenu1").style.visibility = "hidden";
+  document.getElementById("subwayBackButton1").style.visibility = "hidden";
+}

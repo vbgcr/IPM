@@ -64,6 +64,7 @@ body {
   overflow: hidden;
   z-index: 60;
   visibility: hidden;
+  cursor: pointer;
 }
 
 #yesText{
@@ -92,6 +93,7 @@ body {
   overflow: hidden;
   z-index: 60;
   visibility: hidden;
+  cursor: pointer;
 }
 
 #buttons{
@@ -105,6 +107,7 @@ body {
   transform: translate(-50%, -50%);
   position: absolute;
   background-color: #B5B3B7;
+  cursor: pointer;
 }
 
 #lockedScreen{
@@ -308,6 +311,149 @@ body {
     margin-top: 3px;
 }
 
+#transportsMap{
+  position: relative;
+}
+
+#busStop1{
+  position: absolute;
+  bottom: 1cm;
+  right: 1.2cm;
+  cursor: pointer;
+}
+
+#busStopMenu1{
+  width: 4cm;
+  height: 3cm;
+  display: block;
+  top: 40%;
+  left: 50%;
+  border: 2px solid black;
+  border-radius: 0.5cm;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: #B5B3B7;
+  overflow: hidden;
+  z-index: 50;
+  visibility: hidden;
+}
+
+.transportInfo{
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 14;
+}
+
+#hoursBackButton1{
+  width: 4cm;
+  height: 1cm;
+  display: block;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: black;
+  /*#2aca15*/
+  overflow: hidden;
+  z-index: 60;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#busStop2{
+  position: absolute;
+  bottom: 3.1cm;
+  right: 3cm;
+  cursor: pointer;
+}
+
+#busStopMenu2{
+  width: 4cm;
+  height: 3cm;
+  display: block;
+  top: 40%;
+  left: 50%;
+  border: 2px solid black;
+  border-radius: 0.5cm;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: #B5B3B7;
+  overflow: hidden;
+  z-index: 50;
+  visibility: hidden;
+}
+
+#hoursBackButton2{
+  width: 4cm;
+  height: 1cm;
+  display: block;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: black;
+  /*#2aca15*/
+  overflow: hidden;
+  z-index: 60;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.backText{
+  color: white;
+  font-size: 18;
+}
+
+#subwayStation1{
+  position: absolute;
+  bottom: 0.5cm;
+  right: 4cm;
+  cursor: pointer;
+}
+
+#subwayMenu1{
+  width: 4cm;
+  height: 3cm;
+  display: block;
+  top: 40%;
+  left: 50%;
+  border: 2px solid black;
+  border-radius: 0.5cm;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: #B5B3B7;
+  overflow: hidden;
+  z-index: 50;
+  visibility: hidden;
+}
+
+#subwayBackButton1{
+  width: 4cm;
+  height: 1cm;
+  display: block;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: black;
+  /*#2aca15*/
+  overflow: hidden;
+  z-index: 60;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.filter{
+  background: black;
+  color: white;
+  border-color: gray;
+  border-radius: 3px;
+}
+
+.filter_table{
+  left: 10px;
+}
+
 /*SHAKE ANIMATION*/
 
 @-webkit-keyframes spaceboots {
@@ -353,6 +499,8 @@ body {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
+
+/*SHAKE ANIMATION*/
 
 /*TOGGLE BUTTON*/
 
