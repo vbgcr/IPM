@@ -1,3 +1,5 @@
+filtersHidden = false;
+
 function unlock(){
   document.location.href = "mainScreen.html";
 }
@@ -88,40 +90,55 @@ function openPointsOfInterest(){
   document.location.href="pointsOfInterest.html";
 }
 
-function goToBarScreen(){
-  document.location.href = "bars.html";
+function gotToRestaurantsMenu(){
+  document.location.href="restaurantsPopularity1.html";
 }
 
-function goToTransportsScreen(){
-  document.location.href = "publicTransports.html";
+function showOtherFilters(){
+  if(filtersHidden){
+    document.getElementById("filter2").style.visibility = "hidden";
+    document.getElementById("filter3").style.visibility = "hidden";
+    filtersHidden = false;
+  }
+  else{
+    document.getElementById("filter2").style.visibility = "visible";
+    document.getElementById("filter3").style.visibility = "visible";
+    filtersHidden = true;
+  }
 }
 
-function openBusStopMenu1(){
-  document.getElementById("busStopMenu1").style.visibility = "visible";
-  document.getElementById("hoursBackButton1").style.visibility = "visible";
+function turnCircle1PopularityOn(){
+  document.location.href="restaurantsPopularity1.html";
 }
 
-function closeBusStopMenu1(){
-  document.getElementById("busStopMenu1").style.visibility = "hidden";
-  document.getElementById("hoursBackButton1").style.visibility = "hidden";
+function turnCircle2PopularityOn(){
+  document.location.href="restaurantsPopularity2.html";
 }
 
-function openBusStopMenu2(){
-  document.getElementById("busStopMenu2").style.visibility = "visible";
-  document.getElementById("hoursBackButton2").style.visibility = "visible";
+function turnCircle3PopularityOn(){
+  document.location.href="restaurantsPopularity3.html";
 }
 
-function closeBusStopMenu2(){
-  document.getElementById("busStopMenu2").style.visibility = "hidden";
-  document.getElementById("hoursBackButton2").style.visibility = "hidden";
+function turnCircle1NearYouOn(){
+  document.location.href="restaurantsNearYou1.html";
 }
 
-function openSubwayMenu1(){
-  document.getElementById("subwayMenu1").style.visibility = "visible";
-  document.getElementById("subwayBackButton1").style.visibility = "visible";
+function turnCircle2NearYouOn(){
+  document.location.href="restaurantsNearYou2.html";
 }
 
-function closeSubwayMenu1(){
-  document.getElementById("subwayMenu1").style.visibility = "hidden";
-  document.getElementById("subwayBackButton1").style.visibility = "hidden";
+function turnCircle3NearYouOn(){
+  document.location.href="restaurantsNearYou3.html";
+}
+
+function turnCircle1PriceOn(){
+  document.location.href="restaurantsPrice1.html";
+}
+
+function turnCircle2PriceOn(){
+  document.location.href="restaurantsPrice2.html";
+}
+
+function turnCircle3PriceOn(){
+  document.location.href="restaurantsPrice3.html";
 }
