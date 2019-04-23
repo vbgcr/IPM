@@ -63,6 +63,7 @@ body {
   overflow: hidden;
   z-index: 60;
   visibility: hidden;
+  cursor: pointer;
 }
 
 #yesText{
@@ -90,6 +91,7 @@ body {
   overflow: hidden;
   z-index: 60;
   visibility: hidden;
+  cursor: pointer;
 }
 
 #buttons{
@@ -161,26 +163,11 @@ body {
   top: -7px;
   right: -4px;
   font-size: 0.3cm;
-  color: black;
+  color: Black;
   text-align: center;
   z-index: 100;
   font-weight: bold;
 }
-
-
-#time2{
-  height: inherit;
-  width: 50%;
-  position: fixed;
-  top: -7px;
-  right: -4px;
-  font-size: 0.3cm;
-  color: white;
-  text-align: center;
-  z-index: 100;
-  font-weight: bold;
-}
-
 
 #timeLocked{
   height: inherit;
@@ -256,20 +243,13 @@ body {
 #settingsLine2{
   height: 0.8cm;
 }
-#settingsLine3{
-  height: 1.8cm;
-}
-
-#themeLine1{
-  height: 1.8cm;
-}
-
-#themeLine2{
-  height: 2cm;
-}
 
 #dateAndTimeArrow{
   cursor: pointer;
+}
+
+#settingsLine3{
+  height: 1.8cm;
 }
 
 #themeArrow{
@@ -296,6 +276,7 @@ body {
 #ambulance{
   margin-left: 142px;
   margin-top: -42px;
+  cursor: pointer;
 }
 
 #text{
@@ -382,6 +363,7 @@ body {
   border: 1px solid black;
   border-radius: 0.3cm;
   z-index: 10;
+  cursor: pointer;
 }
 
 #circleGrid{
@@ -404,26 +386,7 @@ body {
   margin-left: 8px;
   top: 43px;
 }
-.rating1{
-  text-align: center;
-  width: 0.7cm;
-  background-color: #ea3714;
-  border: 1px solid black;
-  border-radius: 5px;
-  position: absolute;
-  margin-left: 8px;
-  top: 68px;
-}
-.rating2{
-  text-align: center;
-  width: 0.7cm;
-  background-color: #2aca15;
-  border: 1px solid black;
-  border-radius: 5px;
-  position: absolute;
-  margin-left: 8px;
-  top: 68px;
-}
+
 .rating3{
   text-align: center;
   width: 0.7cm;
@@ -434,7 +397,6 @@ body {
   margin-left: 8px;
   top: 68px;
 }
-
 
 .rating3text{
   color: white;
@@ -478,6 +440,7 @@ body {
   position: absolute;
   margin-left: 10px;
   top: 123px;
+  cursor: pointer;
 }
 
 .placeImage{
@@ -492,6 +455,163 @@ body {
   width: 2cm;
   top: 3.8cm;
   right: 4.1cm;
+  cursor: pointer;
+}
+
+#transportsMap{
+  position: relative;
+}
+
+#busStop1{
+  position: absolute;
+  bottom: 1cm;
+  right: 1.2cm;
+  cursor: pointer;
+}
+
+#busStopMenu1{
+  width: 4cm;
+  height: 3cm;
+  display: block;
+  top: 40%;
+  left: 50%;
+  border: 2px solid black;
+  border-radius: 0.5cm;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: #B5B3B7;
+  overflow: hidden;
+  z-index: 50;
+  visibility: hidden;
+}
+
+.transportInfo{
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 14;
+}
+
+#hoursBackButton1{
+  width: 4cm;
+  height: 1cm;
+  display: block;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: black;
+  /*#2aca15*/
+  overflow: hidden;
+  z-index: 60;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#busStop2{
+  position: absolute;
+  bottom: 3.1cm;
+  right: 3cm;
+  cursor: pointer;
+}
+
+#busStopMenu2{
+  width: 4cm;
+  height: 3cm;
+  display: block;
+  top: 40%;
+  left: 50%;
+  border: 2px solid black;
+  border-radius: 0.5cm;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: #B5B3B7;
+  overflow: hidden;
+  z-index: 50;
+  visibility: hidden;
+}
+
+#hoursBackButton2{
+  width: 4cm;
+  height: 1cm;
+  display: block;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: black;
+  /*#2aca15*/
+  overflow: hidden;
+  z-index: 60;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.backText{
+  color: white;
+  font-size: 18;
+}
+
+#subwayStation1{
+  position: absolute;
+  bottom: 0.5cm;
+  right: 4cm;
+  cursor: pointer;
+}
+
+#subwayMenu1{
+  width: 4cm;
+  height: 3cm;
+  display: block;
+  top: 40%;
+  left: 50%;
+  border: 2px solid black;
+  border-radius: 0.5cm;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: #B5B3B7;
+  overflow: hidden;
+  z-index: 50;
+  visibility: hidden;
+}
+
+#subwayBackButton1{
+  width: 4cm;
+  height: 1cm;
+  display: block;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: black;
+  /*#2aca15*/
+  overflow: hidden;
+  z-index: 60;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.cardsOpenText{
+  height: 0.4cm;
+  margin-left: 0.2cm;
+  font-size: 12;
+}
+
+.cardsName{
+  bottom: 0.5cm;
+  margin-left: 0.1cm;
+  font-size: 20;
+}
+
+.cardsNameSmaller{
+  bottom: 0.5cm;
+  margin-left: 0.1cm;
+  font-size: 15;
+}
+
+.cardsOpenTextSmaller{
+  height: 0.4cm;
+  margin-left: 0.2cm;
+  font-size: 10;
 }
 
 #rcorners1 {
