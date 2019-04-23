@@ -38,6 +38,10 @@ function goToSettingsScreen(){
   document.location.href = "settings.html";
 }
 
+function goToThemeScreen(){
+  document.location.href = "theme.html";
+}
+
 function turnOnDoNotDisturb(){
   if(sessionStorage.getItem("doNotDisturbIsOn") == "visible"){
     sessionStorage.setItem("doNotDisturbIsOn", "hidden");
@@ -90,13 +94,10 @@ function openPointsOfInterest(){
   document.location.href="pointsOfInterest.html";
 }
 
-function gotToRestaurantsMenu(){
+function goToRestaurantsMenu(){
   document.location.href="restaurantsPopularity1.html";
 }
 
-function goToBarsMenu(){
-  document.location.href="restaurantsPopularity1.html"
-}
 function showOtherFilters(){
   if(filtersHidden){
     document.getElementById("filter2").style.visibility = "hidden";
@@ -118,20 +119,12 @@ function turnCircle2PopularityOn(){
   document.location.href="restaurantsPopularity2.html";
 }
 
-function turnCircle3PopularityOn(){
-  document.location.href="restaurantsPopularity3.html";
-}
-
 function turnCircle1NearYouOn(){
   document.location.href="restaurantsNearYou1.html";
 }
 
 function turnCircle2NearYouOn(){
   document.location.href="restaurantsNearYou2.html";
-}
-
-function turnCircle3NearYouOn(){
-  document.location.href="restaurantsNearYou3.html";
 }
 
 function turnCircle1PriceOn(){
@@ -141,12 +134,42 @@ function turnCircle1PriceOn(){
 function turnCircle2PriceOn(){
   document.location.href="restaurantsPrice2.html";
 }
-
-function turnCircle3PriceOn(){
-  document.location.href="restaurantsPrice3.html";
+function goToTransports(){
+  document.location.href = "publicTransports.html";
 }
-function goToThemeScreen(){
-  document.location.href = "theme.html";
+
+function openBusStopMenu1(){
+  document.getElementById("busStopMenu1").style.visibility = "visible";
+  document.getElementById("hoursBackButton1").style.visibility = "visible";
+}
+
+function closeBusStopMenu1(){
+  document.getElementById("busStopMenu1").style.visibility = "hidden";
+  document.getElementById("hoursBackButton1").style.visibility = "hidden";
+}
+
+function openBusStopMenu2(){
+  document.getElementById("busStopMenu2").style.visibility = "visible";
+  document.getElementById("hoursBackButton2").style.visibility = "visible";
+}
+
+function closeBusStopMenu2(){
+  document.getElementById("busStopMenu2").style.visibility = "hidden";
+  document.getElementById("hoursBackButton2").style.visibility = "hidden";
+}
+
+function openSubwayMenu1(){
+  document.getElementById("subwayMenu1").style.visibility = "visible";
+  document.getElementById("subwayBackButton1").style.visibility = "visible";
+}
+
+function closeSubwayMenu1(){
+  document.getElementById("subwayMenu1").style.visibility = "hidden";
+  document.getElementById("subwayBackButton1").style.visibility = "hidden";
+}
+
+function goToBarsScreen(){
+  document.location.href = "barsPopularity1.html";
 }
 
 function red_frog(){
@@ -180,4 +203,44 @@ function openBar3Menu(){
 
 function openBar4Menu(){
   document.location.href = "bar4menu.html";
+}
+
+function turnCircle2PopularityOnBars(){
+  document.location.href = "barsPopularity2.html";
+}
+
+function turnCircle1PopularityOnBars(){
+  document.location.href = "barsPopularity1.html";
+}
+
+function goToCantinho(){
+  document.location.href = "cantinho.html";
+}
+
+function goToHorta(){
+  document.location.href = "horta.html";
+}
+
+function goToEntrecote(){
+  document.location.href = "entrecote.html";
+}
+
+function goToHortaMenu(){
+  document.location.href = "HortaMenu.html";
+}
+
+function goToCantinhoMenu(){
+  document.location.href = "CantinhoMenu.html";
+}
+
+function goToEntrecoteMenu(){
+  document.location.href = "entrecoteMenu.html";
+}
+
+function goToMc(){
+  document.location.href = "mcDonalds.html";
+}
+
+function goToMcMenu(){
+  document.location.href = "mcDonaldsMenu.html";
 }
