@@ -12,6 +12,21 @@ function getTime(){
   var t = setTimeout(getTime, 500);
 }
 
+function getTimeWhite(){
+  var watch = new Date();
+  var h = watch.getHours();
+  var m = watch.getMinutes();
+  var month = watch.getMonth() + 1;
+  var day = watch.getDate();
+  month = transformMonth(month);
+  h = checkTime(h);
+  m = checkTime(m);
+  var el = document.getElementById("time2");
+  el.innerHTML = day + " " + month + " " + h + ":" + m;
+  var t = setTimeout(getTime, 500);
+}
+
+
 function checkTime(i){
   if (i < 10) i = "0" + i;
   return i;

@@ -161,11 +161,26 @@ body {
   top: -7px;
   right: -4px;
   font-size: 0.3cm;
-  color: Black;
+  color: black;
   text-align: center;
   z-index: 100;
   font-weight: bold;
 }
+
+
+#time2{
+  height: inherit;
+  width: 50%;
+  position: fixed;
+  top: -7px;
+  right: -4px;
+  font-size: 0.3cm;
+  color: white;
+  text-align: center;
+  z-index: 100;
+  font-weight: bold;
+}
+
 
 #timeLocked{
   height: inherit;
@@ -241,13 +256,20 @@ body {
 #settingsLine2{
   height: 0.8cm;
 }
+#settingsLine3{
+  height: 1.8cm;
+}
+
+#themeLine1{
+  height: 1.8cm;
+}
+
+#themeLine2{
+  height: 2cm;
+}
 
 #dateAndTimeArrow{
   cursor: pointer;
-}
-
-#settingsLine3{
-  height: 1.8cm;
 }
 
 #themeArrow{
@@ -382,7 +404,26 @@ body {
   margin-left: 8px;
   top: 43px;
 }
-
+.rating1{
+  text-align: center;
+  width: 0.7cm;
+  background-color: #ea3714;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: absolute;
+  margin-left: 8px;
+  top: 68px;
+}
+.rating2{
+  text-align: center;
+  width: 0.7cm;
+  background-color: #2aca15;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: absolute;
+  margin-left: 8px;
+  top: 68px;
+}
 .rating3{
   text-align: center;
   width: 0.7cm;
@@ -393,6 +434,7 @@ body {
   margin-left: 8px;
   top: 68px;
 }
+
 
 .rating3text{
   color: white;
@@ -450,6 +492,22 @@ body {
   width: 2cm;
   top: 3.8cm;
   right: 4.1cm;
+}
+
+#rcorners1 {
+  border-radius: 5px 5px;
+  background: #0288d1;
+  padding: 10px; 
+  width: 10px;
+  height: 10px; 
+}
+
+#rcorners2 {
+  border-radius: 5px 5px;
+  background: #ef6c00;
+  padding: 10px; 
+  width: 10px;
+  height: 10px; 
 }
 
 /*SHAKE ANIMATION*/

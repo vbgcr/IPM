@@ -94,6 +94,9 @@ function gotToRestaurantsMenu(){
   document.location.href="restaurantsPopularity1.html";
 }
 
+function goToBarsMenu(){
+  document.location.href="restaurantsPopularity1.html"
+}
 function showOtherFilters(){
   if(filtersHidden){
     document.getElementById("filter2").style.visibility = "hidden";
@@ -141,4 +144,40 @@ function turnCircle2PriceOn(){
 
 function turnCircle3PriceOn(){
   document.location.href="restaurantsPrice3.html";
+}
+function goToThemeScreen(){
+  document.location.href = "theme.html";
+}
+
+function red_frog(){
+  document.location.href = "redFrog.html";
+}
+
+function artesian(){
+  document.location.href = "artesian.html";
+}
+
+function hard_rock(){
+  document.location.href = "hardRock.html";
+}
+
+function oito_nove(){
+  document.location.href = "oitoNove.html";
+}
+
+
+function openBar1Menu(){
+  document.location.href = "bar1menu.html";
+}
+
+function openBar2Menu(){
+  document.location.href = "bar2menu.html";
+}
+
+function openBar3Menu(){
+  document.location.href = "bar3menu.html";
+}
+
+function openBar4Menu(){
+  document.location.href = "bar4menu.html";
 }
