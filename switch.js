@@ -244,3 +244,23 @@ function goToMc(){
 function goToMcMenu(){
   document.location.href = "mcDonaldsMenu.html";
 }
+
+function goToMuseums(){
+  document.location.href = "museumsPopularity1.html";
+}
+
+function turnCircle2NearYouOnMuseums(){
+  document.location.href = "museumsNearYou2.html";
+}
+
+function turnCircle1NearYouOnMuseums(){
+  document.location.href = "museumsNearYou1.html";
+}
+
+function turnCircle2PopularityOnMuseums(){
+  document.location.href = "museumsPopularity2.html";
+}
+
+function turnCircle1PopularityOnMuseums(){
+  document.location.href = "museumsPopularity1.html";
+}
