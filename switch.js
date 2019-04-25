@@ -273,3 +273,19 @@ function goToMc(){
 function goToMcMenu(){
   document.location.href = "mcDonaldsMenu.html";
 }
+
+function goToHorta(){
+  document.location.href = "horta.html";
+}
+
+function goToCantinho(){
+  document.location.href = "cantinho.html";
+}
+
+function goToBrasserie(){
+  document.location.href = "entrecote.html";
+}
+
+function goToMc(){
+  document.location.href = "mcDonalds.html";
+}
