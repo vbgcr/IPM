@@ -47,11 +47,6 @@
               <img src = "images/emptyCircle.png" id = "circle2" class = "circleImages" onclick="turnCircle2PriceOn()">
             </td>
           </tr>
-          <tr>
-            <td class = "choiceCircles">
-              <img src = "images/emptyCircle.png" id = "circle3" class = "circleImages" onclick="turnCircle3PriceOn()">
-            </td>
-          </tr>
         </table>
 
         <table id = "filter">
@@ -75,11 +70,25 @@
 
         <table id = "POIcardsGrid">
           <tr>
-            <td class = "POIcards">
+            <td class = "POIcards" onclick="goToMc()">
+              <div class = "cardsOpenText" onclick="goToMc()">
+                <span>Open(11:00-01:00)</span>
+              </div>
+
+              <div class = "cardsName" onclick="goToMc()">
+                <span>McDonald's</span>
+              </div>
             </td>
           </tr>
           <tr>
-            <td class = "POIcards">
+            <td class = "POIcards" onclick="goToHorta()">
+              <div class = "cardsOpenText" onclick="goToHorta()">
+                <span>Open Now</span>
+              </div>
+
+              <div class = "cardsNameSmaller" onclick="goToHorta()">
+                <span>Horta dos Brunos</span>
+              </div>
             </td>
           </tr>
         </table>
