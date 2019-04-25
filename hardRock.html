@@ -7,7 +7,7 @@
     <script src = "time.js"></script>
     <script src = "switch.js"></script>
   </head>
-  <body onload = "getTimeWhite() ; isDoNotDisturbOn()">
+  <body onload = "getTime() ; isDoNotDisturbOn()">
   <div id = "device">
     <div id = "buttons">
       <svg id = "button-div">
@@ -17,12 +17,15 @@
       <svg id = "button-div2">
         <rect id = "button2" width = "30" height = "10" style ="fill: black" style = "cursor: pointer" onclick="goToHomeScreen()">
       </svg>
+      <svg id = "button-div3">
+        <rect id = "button3" width = "25" height = "6" style = "fill: black" style = "cursor: pointer" onclick = "turnCircle1BarPopularityOn()">
+      </svg>
     </div>
     <div id = "screen">
       <img class = "placeImage" src = "images/hardrock.jpg  ">
 
       <div id = "screentop">
-        <p id = "time2"></p>
+        <p id = "time"></p>
         <table id = "screentopIcons" width = "15%">
           <tr>
             <td class = "smallIcon" id = "smallPin" width = "50%" allign = "center">
@@ -36,9 +39,8 @@
       </div>
 
       <div id = "mainscreen">
-          <img class = "backArrow" src = images/backArrow.png onclick = "goToBarsMenu()">
           <span class = "placeName">Hard Rock Cafe</span>
-          <rect class = "rating2">
+          <rect class = "rating3">
             <span class = "rating3text">4.4</span>
           </rect>
           <rect class = "rateThis">
@@ -48,7 +50,7 @@
           <rect class = "directions">
             <span>Get Directions</span>
           </rect>
-          <rect class = "seeMenu"  onclick="openBar3Menu()">
+          <rect class = "seeMenu"  onclick="openHardRockMenu()">
             <span>Menu</span>
           </rect>
       </div>

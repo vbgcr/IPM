@@ -1,5 +1,9 @@
 filtersHidden = false;
 
+function goback(){
+  window.history.back()
+}
+
 function unlock(){
   document.location.href = "mainScreen.html";
 }
@@ -134,6 +138,31 @@ function turnCircle1PriceOn(){
 function turnCircle2PriceOn(){
   document.location.href="restaurantsPrice2.html";
 }
+
+function turnCircle1BarPopularityOn(){
+  document.location.href="barsPopularity1.html";
+}
+
+function turnCircle2BarPopularityOn(){
+  document.location.href="barsPopularity2.html";
+}
+
+function turnCircle1BarNearYouOn(){
+  document.location.href="barsNearYou1.html";
+}
+
+function turnCircle2BarNearYouOn(){
+  document.location.href="barsNearYou2.html";
+}
+
+function turnCircle1BarPriceOn(){
+  document.location.href="barsPrice1.html";
+}
+
+function turnCircle2BarPriceOn(){
+  document.location.href="barsPrice2.html";
+}
+
 function goToTransports(){
   document.location.href = "publicTransports.html";
 }
@@ -189,20 +218,20 @@ function oito_nove(){
 }
 
 
-function openBar1Menu(){
-  document.location.href = "bar1menu.html";
+function openRedFrogMenu(){
+  document.location.href = "redFrogMenu.html";
 }
 
-function openBar2Menu(){
-  document.location.href = "bar2menu.html";
+function openArtesianMenu(){
+  document.location.href = "artesianmenu.html";
 }
 
-function openBar3Menu(){
-  document.location.href = "bar3menu.html";
+function openHardRockMenu(){
+  document.location.href = "hardRockMenu.html";
 }
 
-function openBar4Menu(){
-  document.location.href = "bar4menu.html";
+function openOitoNoveMenu(){
+  document.location.href = "oitoNoveMenu.html";
 }
 
 function turnCircle2PopularityOnBars(){
@@ -230,7 +259,7 @@ function goToHortaMenu(){
 }
 
 function goToCantinhoMenu(){
-  document.location.href = "CantinhoMenu.html";
+  document.location.href = "cantinhoMenu.html";
 }
 
 function goToEntrecoteMenu(){
@@ -243,24 +272,4 @@ function goToMc(){
 
 function goToMcMenu(){
   document.location.href = "mcDonaldsMenu.html";
-}
-
-function goToMuseums(){
-  document.location.href = "museumsPopularity1.html";
-}
-
-function turnCircle2NearYouOnMuseums(){
-  document.location.href = "museumsNearYou2.html";
-}
-
-function turnCircle1NearYouOnMuseums(){
-  document.location.href = "museumsNearYou1.html";
-}
-
-function turnCircle2PopularityOnMuseums(){
-  document.location.href = "museumsPopularity2.html";
-}
-
-function turnCircle1PopularityOnMuseums(){
-  document.location.href = "museumsPopularity1.html";
 }
