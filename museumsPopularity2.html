@@ -9,6 +9,20 @@
   </head>
   <body onload = "getTime() ; isDoNotDisturbOn()">
   <div id = "device">
+
+    <table id = "circleGrid">
+      <tr>
+        <td class = "choiceCircles">
+          <img src = "images/emptyCircle.png" id = "circle1" class = "circleImages" onclick="turnCircle1PopularityOnMuseums()">
+        </td>
+      </tr>
+      <tr>
+        <td class = "choiceCircles">
+          <img src = "images/fullCircle.png" id = "circle2" class = "circleImages">
+        </td>
+      </tr>
+    </table>
+
     <div id = "buttons">
       <svg id = "button-div">
         <rect id = "button1" width = "10" height = "25" style ="fill:'black'" onclick = "relock()" style = "cursor: pointer">
@@ -17,6 +31,11 @@
       <svg id = "button-div2">
         <rect id = "button2" width = "30" height = "10" style ="fill: black" style = "cursor: pointer" onclick="goToHomeScreen()">
       </svg>
+
+      <svg id = "button-div3">
+        <rect id = "button3" width = "25" height = "6" style = "fill: black" style = "cursor: pointer" onclick = "openPointsOfInterest()">
+      </svg>
+
     </div>
     <div id = "screen">
 
@@ -74,7 +93,7 @@
                   <div class = "cardsOpenText">
                     <span>Open - 10:00-19:00</span>
                   </div>
-    
+
                   <div class = "cardsName">
                     <span>MAAT</span>
                   </div>
@@ -85,7 +104,7 @@
                   <div class = "cardsOpenText">
                     <span>Closed - 10:00-19:00</span>
                   </div>
-    
+
                   <div class = "cardsNameSmaller">
                     <span>Museu da Farmácia</span>
                   </div>
