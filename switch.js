@@ -104,8 +104,8 @@ function goToRestaurantsMenu(){
 
 function showOtherFilters(){
   if(filtersHidden){
-    document.getElementById("filter2").style.visibility = "hidden";
-    document.getElementById("filter3").style.visibility = "hidden";
+    document.getElementById("filter2").style.visibility = "collapse";
+    document.getElementById("filter3").style.visibility = "collapse";
     filtersHidden = false;
   }
   else{
@@ -117,6 +117,10 @@ function showOtherFilters(){
 
 function turnCircle1PopularityOn(){
   document.location.href="restaurantsPopularity1.html";
+}
+
+function turnCircle2PopularityOn(){
+  document.location.href="restaurantsPopularity2.html";
 }
 
 function turnCircle2PopularityOn(){
@@ -139,27 +143,27 @@ function turnCircle2PriceOn(){
   document.location.href="restaurantsPrice2.html";
 }
 
-function turnCircle1BarPopularityOn(){
+function turnCircle1BarsPopularityOn(){
   document.location.href="barsPopularity1.html";
 }
 
-function turnCircle2BarPopularityOn(){
+function turnCircle2BarsPopularityOn(){
   document.location.href="barsPopularity2.html";
 }
 
-function turnCircle1BarNearYouOn(){
+function turnCircle1BarsNearYouOn(){
   document.location.href="barsNearYou1.html";
 }
 
-function turnCircle2BarNearYouOn(){
+function turnCircle2BarsNearYouOn(){
   document.location.href="barsNearYou2.html";
 }
 
-function turnCircle1BarPriceOn(){
+function turnCircle1BarsPriceOn(){
   document.location.href="barsPrice1.html";
 }
 
-function turnCircle2BarPriceOn(){
+function turnCircle2BarsPriceOn(){
   document.location.href="barsPrice2.html";
 }
 
@@ -274,18 +278,18 @@ function goToMcMenu(){
   document.location.href = "mcDonaldsMenu.html";
 }
 
-function goToHorta(){
-  document.location.href = "horta.html";
+function goToRestaurantsMap(){
+  document.location.href = "restaurantMap.html"
 }
 
-function goToCantinho(){
-  document.location.href = "cantinho.html";
+function goToBarMap(){
+  document.location.href = "barMap.html"
 }
 
-function goToBrasserie(){
-  document.location.href = "entrecote.html";
+function openMuseumMap(){
+  document.location.href = "museumMap.html"
 }
 
-function goToMc(){
-  document.location.href = "mcDonalds.html";
+function goToMaatPrices(){
+  document.location.href = "maatPrecos.html"
 }

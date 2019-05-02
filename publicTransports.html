@@ -19,16 +19,11 @@
         <svg id = "button-div2">
           <rect id = "button2" width = "30" height = "10" style ="fill: black" style = "cursor: pointer" onclick="goToHomeScreen()">
         </svg>
+        <svg id = "button-div3">
+          <rect id = "button3" width = "25" height = "6" style = "fill: black" style = "cursor: pointer" onclick = "openPointsOfInterest()">
+        </svg>
       </div>
-        <div id = "screen">
-            <svg id = "button-div">
-                <rect id = "button1" width = "10" height = "25" style ="fill:'black'" onclick = "relock()" style = "cursor: pointer">
-            </svg>
-
-            <svg id = "button-div2">
-                <rect id = "button2" width = "30" height = "10" style ="fill: black" style = "cursor: pointer" onclick="goToHomeScreen()">
-            </svg>
-
+        <div id = "screen">``
             <div id = "screentop">
                 <p id = "time"></p>
                 <table id = "screentopIcons" width = "15%">
@@ -45,7 +40,7 @@
 
             <div id = "mainscreen">
                 <div id = "transportsMap">
-                    <img src = "images/map.png" width = 230>
+                    <img src = "images/map1.png" width = 230>
                 </div>
 
                 <div id = "busStop1">
@@ -55,7 +50,7 @@
                 <div id = "busStopMenu1">
                     <div class = "transportInfo">
                         <span>Bus Number: 720
-                            Destination: Picheleira    
+                            Destination: Picheleira
                             Next Stops:
                             13:45 /
                             14:00 /
@@ -93,7 +88,7 @@
                 </div>
 
                 <div id = "subwayStation1">
-                    <img src = "images/subway.png" width = "50" onclick = "openSubwayMenu1()">
+                    <img src = "images/subway.png" width = "30" onclick = "openSubwayMenu1()">
                 </div>
 
                 <div id = "subwayMenu1">
@@ -109,7 +104,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <div id = "myLocation">
+                  <img id = "locationPin" src="images/pinRed.png" width = "20">
+                </div>
         </div>
     </div>
     </body>

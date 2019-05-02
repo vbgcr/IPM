@@ -9,6 +9,20 @@
   </head>
   <body onload = "getTime() ; isDoNotDisturbOn()">
   <div id = "device">
+
+    <table id = "circleGrid">
+      <tr>
+        <td class = "choiceCircles">
+          <img src = "images/emptyCircle.png" id = "circle1" class = "circleImages" onclick="turnCircle1NearYouOn()">
+        </td>
+      </tr>
+      <tr>
+        <td class = "choiceCircles">
+          <img src = "images/fullCircle.png" id = "circle2" class = "circleImages">
+        </td>
+      </tr>
+    </table>
+
     <div id = "buttons">
       <svg id = "button-div">
         <rect id = "button1" width = "10" height = "25" style ="fill:'black'" onclick = "relock()" style = "cursor: pointer">
@@ -16,6 +30,9 @@
 
       <svg id = "button-div2">
         <rect id = "button2" width = "30" height = "10" style ="fill: black" style = "cursor: pointer" onclick="goToHomeScreen()">
+      </svg>
+      <svg id = "button-div3">
+        <rect id = "button3" width = "25" height = "6" style = "fill: black" style = "cursor: pointer" onclick = "openPointsOfInterest()">
       </svg>
     </div>
     <div id = "screen">
@@ -36,19 +53,6 @@
 
       <div id = "mainscreen">
 
-        <table id = "circleGrid">
-          <tr>
-            <td class = "choiceCircles">
-              <img src = "images/emptyCircle.png" id = "circle1" class = "circleImages" onclick="turnCircle1NearYouOn()">
-            </td>
-          </tr>
-          <tr>
-            <td class = "choiceCircles">
-              <img src = "images/fullCircle.png" id = "circle2" class = "circleImages">
-            </td>
-          </tr>
-        </table>
-
         <table id = "filter">
           <tr>
             <td class = "filterChoice" id = "filter1">
@@ -62,31 +66,31 @@
             </td>
           </tr>
           <tr>
-            <td class = "filterChoice" id = "filter3"  onclick="turnCircle1PopularityOn()">>
+            <td class = "filterChoice" id = "filter3"  onclick="turnCircle1PopularityOn()">
               <span>Filter: Popularity</span>
             </td>
           </tr>
         </table>
 
         <table id = "POIcardsGrid">
-          <tr>
-            <td class = "POIcards" onclick="goToBrasserie()">
-              <div class = "cardsOpenText" onclick="goToBrasserie()">
-                <span>Open(19:30-23:30)</span>
+          <tr onclick="goToEntrecote()">
+            <td class = "POIcards" onclick="goToEntrecote()">
+              <div class = "cardsOpenText">
+                <span>Closed(19:30-23:30)</span>
               </div>
 
-              <div class = "cardsNameSmaller" onclick="goToBrasserie()">
-                <span>La Brasserie</span>
+              <div class = "cardsNameSmaller">
+                <span>La Brasserie de L'Entrecôte</span>
               </div>
             </td>
           </tr>
           <tr>
             <td class = "POIcards" onclick="goToMc()">
-              <div class = "cardsOpenText" onclick="goToMc()">
-                <span>Open(11:00-01:00)</span>
+              <div class = "cardsOpenText">
+                <span>Open now</span>
               </div>
 
-              <div class = "cardsName" onclick="goToMc()">
+              <div class = "cardsName">
                 <span>McDonald's</span>
               </div>
             </td>
