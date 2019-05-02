@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE = "html">
 <html>
   <head>
 
@@ -9,6 +9,20 @@
   </head>
   <body onload = "getTime() ; isDoNotDisturbOn()">
   <div id = "device">
+
+    <table id = "circleGrid">
+      <tr>
+        <td class = "choiceCircles">
+          <img src = "images/fullCircle.png" id = "circle1" class = "circleImages">
+        </td>
+      </tr>
+      <tr>
+        <td class = "choiceCircles">
+          <img src = "images/emptyCircle.png" id = "circle2" class = "circleImages" onclick="turnCircle2BarsPopularityOn()">
+        </td>
+      </tr>
+    </table>
+
     <div id = "buttons">
       <svg id = "button-div">
         <rect id = "button1" width = "10" height = "25" style ="fill:'black'" onclick = "relock()" style = "cursor: pointer">
@@ -19,7 +33,7 @@
       </svg>
 
       <svg id = "button-div3">
-        <rect id = "button3" width = "25" height = "6" style = "fill: black" style = "cursor: pointer" onclick = "unlock()">
+        <rect id = "button3" width = "25" height = "6" style = "fill: black" style = "cursor: pointer" onclick = "openPointsOfInterest()">
       </svg>
     </div>
     <div id = "screen">
@@ -39,23 +53,36 @@
       </div>
 
       <div id = "mainscreen">
-        <table id = "app-grid" width = "100%">
+        <table id = "filter">
           <tr>
-            <td class = "icon" id = "screen-division" width = "25%" align="center">
-              <img src = "images/restaurantsWhiteCircle.png" width="60" onclick="goToRestaurantsMenu()">
-            </td>
-            <td class = "icon" id = "screen-division" width = "25%" align="center">
-              <img src = "images/barsWhiteCircle.png" width="60" onclick="goToBarsPopularity1()">
+            <td class = "filterChoice" id = "filter1">
+              <span>Filter: Popularity</span>
+              <img src = "images/downArrow.png" id = "filterArrow1" class = "filterArrow" onclick="showOtherFilters()">
             </td>
           </tr>
           <tr>
-            <td  class = "icon" id = "screen-division" width = "25%" align="center">
-              <img src = "images/publicTransportsWhiteCircle.png" width="60" onclick="goToTransports()">
-            </td>
-            <td class = "icon" id = "screen-division" width = "25%" align="center">
-              <img src = "images/museumWhiteCircle.png" width="60" onclick = "goToMuseum()">
+            <td class = "filterChoice" id = "filter2" onclick="turnCircle1BarsPriceOn()">
+              <span>Filter: Price</span>
             </td>
           </tr>
+          <tr>
+            <td class = "filterChoice" id = "filter3" onclick="turnCircle1BarsNearYouOn()">
+              <span>Filter: Near You</span>
+            </td>
+          </tr>
+        </table>
+
+        <table id = "POIcardsGrid">
+          <tr>
+            <td class = "POIcards">
+            </td>
+          </tr>
+          <tr>
+            <td class = "POIcards">
+            </td>
+          </tr>
+        </table>
+
       </div>
     </div>
 </body>

@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE = "html">
 <html>
   <head>
 
@@ -17,9 +17,8 @@
       <svg id = "button-div2">
         <rect id = "button2" width = "30" height = "10" style ="fill: black" style = "cursor: pointer" onclick="goToHomeScreen()">
       </svg>
-
       <svg id = "button-div3">
-        <rect id = "button3" width = "25" height = "6" style = "fill: black" style = "cursor: pointer" onclick = "unlock()">
+        <rect id = "button3" width = "25" height = "6" style = "fill: black" style = "cursor: pointer" onclick = "openPointsOfInterest()">
       </svg>
     </div>
     <div id = "screen">
@@ -39,23 +38,50 @@
       </div>
 
       <div id = "mainscreen">
-        <table id = "app-grid" width = "100%">
+
+        <table id = "circleGrid">
           <tr>
-            <td class = "icon" id = "screen-division" width = "25%" align="center">
-              <img src = "images/restaurantsWhiteCircle.png" width="60" onclick="goToRestaurantsMenu()">
-            </td>
-            <td class = "icon" id = "screen-division" width = "25%" align="center">
-              <img src = "images/barsWhiteCircle.png" width="60" onclick="goToBarsPopularity1()">
+            <td class = "choiceCircles">
+              <img src = "images/fullCircle.png" id = "circle1" class = "circleImages">
             </td>
           </tr>
           <tr>
-            <td  class = "icon" id = "screen-division" width = "25%" align="center">
-              <img src = "images/publicTransportsWhiteCircle.png" width="60" onclick="goToTransports()">
-            </td>
-            <td class = "icon" id = "screen-division" width = "25%" align="center">
-              <img src = "images/museumWhiteCircle.png" width="60" onclick = "goToMuseum()">
+            <td class = "choiceCircles">
+              <img src = "images/emptyCircle.png" id = "circle2" class = "circleImages" onclick="turnCircle2BarsPriceOn()">
             </td>
           </tr>
+        </table>
+
+        <table id = "filter">
+          <tr>
+            <td class = "filterChoice" id = "filter1">
+              <span>Filter: Price</span>
+              <img src = "images/downArrow.png" id = "filterArrow1" class = "filterArrow" onclick="showOtherFilters()">
+            </td>
+          </tr>
+          <tr>
+            <td class = "filterChoice" id = "filter2" onclick="turnCircle1BarsNearYouOn()">
+              <span>Filter: Near You</span>
+            </td>
+          </tr>
+          <tr>
+            <td class = "filterChoice" id = "filter3" onclick="turnCircle1BarsPopularityOn()">
+              <span>Filter: Popularity</span>
+            </td>
+          </tr>
+        </table>
+
+        <table id = "POIcardsGrid">
+          <tr>
+            <td class = "POIcards">
+            </td>
+          </tr>
+          <tr>
+            <td class = "POIcards">
+            </td>
+          </tr>
+        </table>
+
       </div>
     </div>
 </body>

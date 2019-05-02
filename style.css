@@ -15,7 +15,8 @@ body {
   border-radius: 0.5cm;
   transform: translate(-50%, -50%);
   position: absolute;
-  background-color: #B5B3B7;
+  background-color: #888888;
+  /*#B5B3B7*/
   overflow: hidden;
 }
 
@@ -129,6 +130,7 @@ body {
   left: 102%;
   margin-top: 24%;
   z-index: 10;
+  cursor: pointer;
 }
 
 #button-div2{
@@ -136,7 +138,12 @@ body {
   position: absolute;
   left: 44%;
   top: 102%;
-  z-index: 10;
+  z-index: 20;
+  cursor: pointer;
+}
+
+#pavilhao{
+  font-size: 14px;
 }
 
 #button-div3{
@@ -145,6 +152,7 @@ body {
   left: 20%;
   top: 102%;
   z-index: 10;
+  cursor: pointer;
 }
 
 #mainscreen{
@@ -350,14 +358,14 @@ body {
 
 #filter2{
   border-top-color: 969597;
-  visibility: hidden;
   z-index: 40;
+  visibility: hidden;
 }
 
 #filter3{
   border-top-color: 969597;
-  visibility: hidden;
   z-index: 40;
+  visibility: hidden;
 }
 
 .filterArrow{
@@ -365,6 +373,7 @@ body {
   margin-left: 5px;
   margin-top: 1px;
   position: absolute;
+  cursor: pointer
 }
 
 #POIcardsGrid{
@@ -378,7 +387,7 @@ body {
 
 .POIcards{
   height: 1.5cm;
-  width: 4cm;
+  width: 5cm;
   background-color: #969597;
   border: 1px solid black;
   border-radius: 0.3cm;
@@ -388,9 +397,10 @@ body {
 
 #circleGrid{
   border-spacing: 5px;
-  position: absolute;
-  margin-left: 4.27cm;
-  margin-top: 1.2cm;
+  position:absolute;
+  left: 20.5cm;
+  top: 8cm;
+  z-index: 40;
 }
 
 .choiceCircles{
@@ -398,6 +408,7 @@ body {
 }
 
 .circleImages{
+  cursor: pointer;
   width: 18px;
 }
 
@@ -407,7 +418,18 @@ body {
   top: 43px;
 }
 
-.rating3{
+.rating1{
+  text-align: center;
+  width: 0.7cm;
+  background-color: #07b307;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: absolute;
+  margin-left: 8px;
+  top: 68px;
+}
+
+.rating2{
   text-align: center;
   width: 0.7cm;
   background-color: #e8c463;
@@ -418,9 +440,21 @@ body {
   top: 68px;
 }
 
-.rating3text{
+.rating3{
+  text-align: center;
+  width: 0.7cm;
+  background-color: #f42121;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: absolute;
+  margin-left: 8px;
+  top: 68px;
+}
+
+.ratingtext{
   color: white;
 }
+
 
 .rateThis{
   text-align: center;
@@ -449,6 +483,7 @@ body {
   position: absolute;
   margin-left: 62px;
   top: 123px;
+  cursor: pointer;
 }
 
 .seeMenu{
@@ -533,6 +568,24 @@ body {
   cursor: pointer;
 }
 
+#iconPlacement1{
+  position: absolute;
+  bottom: 3cm;
+  right: 4cm;
+}
+
+#iconPlacement2{
+  position: absolute;
+  bottom: 2cm;
+  right: 3cm;
+}
+
+#iconPlacement3{
+  position: absolute;
+  bottom: 1cm;
+  right: 4cm;
+}
+
 #busStop2{
   position: absolute;
   bottom: 3.1cm;
@@ -575,6 +628,7 @@ body {
 .backText{
   color: white;
   font-size: 18;
+  margin-top: 5px;
 }
 
 #subwayStation1{
@@ -582,6 +636,16 @@ body {
   bottom: 0.5cm;
   right: 4cm;
   cursor: pointer;
+}
+
+#myLocation{
+  position: absolute;
+  bottom: 60%;
+  left: 46%;
+}
+
+#locationPin{
+  position: absolute;
 }
 
 #subwayMenu1{
@@ -761,3 +825,91 @@ body {
  }
 
  /*TOGGLE BUTTON*/
+
+ .rating{
+ 	--uiRatingSize: var(--ratingSize, 20px);
+ 	--uiRatingColor: var(--ratingColor, #eee);
+ 	--uiRatingColorActive: var(--ratingColorActive, #ffcc00);
+ 	--uiRatingStroke: var(--ratingStroke, #222);
+ 	--uiRatingStrokeWidth: var(--ratingStrokeWidth, 1px);
+
+ 	display: flex;
+   font-size: var(--uiRatingSize);
+ 	color: var(--uiRatingColor);
+   position: relative;
+ }
+
+ .rating__control{
+ 	position: absolute;
+ 	left: -9999px;
+ }
+
+ .rating__control:nth-of-type(1):focus ~ .rating__item:nth-of-type(1):before,
+ .rating__control:nth-of-type(2):focus ~ .rating__item:nth-of-type(2):before,
+ .rating__control:nth-of-type(3):focus ~ .rating__item:nth-of-type(3):before,
+ .rating__control:nth-of-type(4):focus ~ .rating__item:nth-of-type(4):before,
+ .rating__control:nth-of-type(5):focus ~ .rating__item:nth-of-type(5):before{
+   content: "";
+   box-shadow: 0 0 0 0px var(--uiRatingColorActive);
+
+   position: absolute;
+   top: -.15em;
+   right: 0;
+   bottom: -.15em;
+   left: 0;
+   z-index: -1;
+ }
+
+ .rating__item{
+ 	-webkit-tap-highlight-color: transparent;
+   cursor: pointer;
+   position: relative;
+ }
+
+ .rating__item{
+ 	padding-left: .1em;
+  padding-right: .1em;
+  top: 1.8cm;
+  left: 1.2cm;
+ }
+
+ .rating__star{
+ 	display: block;
+ 	width: 0.6em;
+ 	height: 0.6em;
+
+ 	fill: currentColor;
+ 	stroke: var(--uiRatingStroke);
+ 	stroke-width: var(--uiRatingStrokeWidth);
+ }
+
+ .rating__label{
+ 	position: absolute;
+ 	top: 0;
+ 	left: -9999px;
+ }
+
+ .rating:hover,
+ .rating__control:nth-of-type(1):checked ~ .rating__item:nth-of-type(1),
+ .rating__control:nth-of-type(2):checked ~ .rating__item:nth-of-type(-n+2),
+ .rating__control:nth-of-type(3):checked ~ .rating__item:nth-of-type(-n+3),
+ .rating__control:nth-of-type(4):checked ~ .rating__item:nth-of-type(-n+4),
+ .rating__control:nth-of-type(5):checked ~ .rating__item:nth-of-type(-n+5){
+ 	color: var(--uiRatingColorActive);
+ }
+
+ .rating__item:hover ~ .rating__item{
+   color: var(--uiRatingColor);
+ }
+
+ /*
+ =====
+ LEVEL 2. SETTINGS
+ =====
+ */
+
+ .rating{
+   --ratingSize: 30px;
+   --ratingColor: #eee;
+ 	--ratingColorActive: #ffcc00;
+ }

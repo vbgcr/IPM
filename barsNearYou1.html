@@ -1,4 +1,4 @@
-<!DOCTYPE = "html">
+<!DOCTYPE>
 <html>
   <head>
 
@@ -13,12 +13,12 @@
     <table id = "circleGrid">
       <tr>
         <td class = "choiceCircles">
-          <img src = "images/emptyCircle.png" id = "circle1" class = "circleImages" onclick="turnCircle1PriceOn()">
+          <img src = "images/fullCircle.png" id = "circle1" class = "circleImages">
         </td>
       </tr>
       <tr>
         <td class = "choiceCircles">
-          <img src = "images/fullCircle.png" id = "circle2" class = "circleImages">
+          <img src = "images/emptyCircle.png" id = "circle2" class = "circleImages" onclick="turnCircle2BarsNearYouOn()">
         </td>
       </tr>
     </table>
@@ -56,17 +56,17 @@
         <table id = "filter">
           <tr>
             <td class = "filterChoice" id = "filter1">
-              <span>Filter: Price</span>
+              <span>Filter: Near You</span>
               <img src = "images/downArrow.png" id = "filterArrow1" class = "filterArrow" onclick="showOtherFilters()">
             </td>
           </tr>
           <tr>
-            <td class = "filterChoice" id = "filter2" onclick="turnCircle1NearYouOn()">
-              <span>Filter: Near You</span>
+            <td class = "filterChoice" id = "filter2" onclick="turnCircle1BarsPriceOn()">
+              <span>Filter: Price</span>
             </td>
           </tr>
           <tr>
-            <td class = "filterChoice" id = "filter3" onclick="turnCircle1PopularityOn()">
+            <td class = "filterChoice" id = "filter3" onclick="turnCircle1BarsPopularityOn()">
               <span>Filter: Popularity</span>
             </td>
           </tr>
@@ -74,23 +74,23 @@
 
         <table id = "POIcardsGrid">
           <tr>
-            <td class = "POIcards" onclick="goToBrasserie()">
-              <div class = "cardsOpenText" onclick="goToBrasserie()">
-                <span>Open(19:30-23:30)</span>
+            <td class = "POIcards" onclick="goToHorta()">
+              <div class = "cardsOpenText">
+                <span>Closed(12:30-15:00)</span>
               </div>
 
-              <div class = "cardsNameSmaller" onclick="goToBrasserie()">
-                <span>La Brasserie</span>
+              <div class = "cardsNameSmaller">
+                <span>Horta dos Brunos</span>
               </div>
             </td>
           </tr>
           <tr>
             <td class = "POIcards" onclick="goToCantinho()">
-              <div class = "cardsOpenText" onclick="goToCantinho()">
+              <div class = "cardsOpenText">
                 <span>Closed(19:00-24:00)</span>
               </div>
 
-              <div class = "cardsNameSmaller" onclick="goToCantinho()">
+              <div class = "cardsNameSmaller">
                 <span>Cantinho do Avillez</span>
               </div>
             </td>
