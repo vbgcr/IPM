@@ -13,12 +13,12 @@
     <table id = "circleGrid">
       <tr>
         <td class = "choiceCircles">
-          <img src = "images/fullCircle.png" id = "circle1" class = "circleImages">
+          <img src = "images/emptyCircle.png" id = "circle1" class = "circleImages" onclick="turnCircle1PopularityOn()">
         </td>
       </tr>
       <tr>
         <td class = "choiceCircles">
-          <img src = "images/emptyCircle.png" id = "circle2" class = "circleImages" onclick="turnCircle2PopularityOn()">
+          <img src = "images/fullCircle.png" id = "circle2" class = "circleImages">
         </td>
       </tr>
     </table>
@@ -31,7 +31,6 @@
       <svg id = "button-div2">
         <rect id = "button2" width = "30" height = "10" style ="fill: black" style = "cursor: pointer" onclick="goToHomeScreen()">
       </svg>
-
       <svg id = "button-div3">
         <rect id = "button3" width = "25" height = "6" style = "fill: black" style = "cursor: pointer" onclick = "openPointsOfInterest()">
       </svg>
@@ -57,12 +56,12 @@
         <table id = "circleGrid">
           <tr>
             <td class = "choiceCircles">
-              <img src = "images/fullCircle.png" id = "circle1" class = "circleImages">
+              <img src = "images/emptyCircle.png" id = "circle1" class = "circleImages" onclick="turnCircle1PopularityOn()">
             </td>
           </tr>
           <tr>
             <td class = "choiceCircles">
-              <img src = "images/emptyCircle.png" id = "circle2" class = "circleImages" onclick="turnCircle2PopularityOn()">
+              <img src = "images/fullCircle.png" id = "circle2" class = "circleImages">
             </td>
           </tr>
         </table>
@@ -88,24 +87,24 @@
 
         <table id = "POIcardsGrid">
           <tr>
-            <td class = "POIcards" onclick="goToCantinho()">
-              <div class = "cardsOpenText" onclick="goToCantinho()">
-                <span>Closed(19:00-24:00)</span>
+            <td class = "POIcards" onclick="goToHorta()">
+              <div class = "cardsOpenText" onclick="goToHorta()">
+                <span>Open Now</span>
               </div>
 
-              <div class = "cardsNameSmaller" onclick="goToCantinho()">
-                <span>Cantinho do Avillez</span>
+              <div class = "cardsNameSmaller" onclick="goToHorta()">
+                <span>Horta dos Brunos</span>
               </div>
-            </div>
+            </td>
           </tr>
           <tr>
-            <td class = "POIcards" onclick="goToBrasserie()">
-              <div class = "cardsOpenText" onclick="goToBrasserie()">
-                <span>Open(19:30-23:30)</span>
+            <td class = "POIcards" onclick="goToMc()">
+              <div class = "cardsOpenText" onclick="goToMc()">
+                <span>Open(11:00-01:00)</span>
               </div>
 
-              <div class = "cardsNameSmaller" onclick="goToEntrecote()">
-                <span>La Brasserie</span>
+              <div class = "cardsName" onclick="goToMc()">
+                <span>McDonald's</span>
               </div>
             </td>
           </tr>

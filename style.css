@@ -385,6 +385,15 @@ body {
   z-index: 10;
 }
 
+#transportsBack{
+  position: absolute;
+  z-index: 200;
+  width: 70;
+  left: 3cm;
+  bottom: 2.15cm;
+  cursor: pointer;
+}
+
 .POIcards{
   height: 1.5cm;
   width: 5cm;
@@ -544,7 +553,6 @@ body {
   overflow: hidden;
   z-index: 50;
   visibility: hidden;
-  text-align: center;
 }
 
 .transportInfo{
@@ -608,7 +616,6 @@ body {
   overflow: hidden;
   z-index: 50;
   visibility: hidden;
-  text-align: center;
 }
 
 #hoursBackButton2{
@@ -650,19 +657,6 @@ body {
   position: absolute;
 }
 
-#transportsBack{
-  position: absolute;
-  z-index: 200;
-  width: 70;
-  left: 3cm;
-  bottom: 2.15cm;
-  cursor: pointer;
-}
-
-#stationText{
-  margin-top: 0.7cm;
-}
-
 #subwayMenu1{
   width: 4cm;
   height: 3cm;
@@ -677,7 +671,22 @@ body {
   overflow: hidden;
   z-index: 50;
   visibility: hidden;
-  text-align: center;
+}
+
+#subwayBackButton1{
+  width: 4cm;
+  height: 1cm;
+  display: block;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: black;
+  /*#2aca15*/
+  overflow: hidden;
+  z-index: 60;
+  visibility: hidden;
+  cursor: pointer;
 }
 
 .cardsOpenText{

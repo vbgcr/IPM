@@ -12,14 +12,14 @@
 
     <table id = "circleGrid">
       <tr>
-        <td class = "choiceCircles">
-          <img src = "images/fullCircle.png" id = "circle1" class = "circleImages">
-        </td>
-      </tr>
-      <tr>
-        <td class = "choiceCircles">
-          <img src = "images/emptyCircle.png" id = "circle2" class = "circleImages" onclick="turnCircle2BarsPopularityOn()">
-        </td>
+          <td class = "choiceCircles">
+              <img src = "images/fullCircle.png" id = "circle1" class = "circleImages">
+            </td>
+          </tr>
+          <tr>
+            <td class = "choiceCircles">
+              <img src = "images/emptyCircle.png" id = "circle2" class = "circleImages" onclick="turnCircle2BarsPopularityOn()">
+            </td>
       </tr>
     </table>
 
@@ -31,7 +31,6 @@
       <svg id = "button-div2">
         <rect id = "button2" width = "30" height = "10" style ="fill: black" style = "cursor: pointer" onclick="goToHomeScreen()">
       </svg>
-
       <svg id = "button-div3">
         <rect id = "button3" width = "25" height = "6" style = "fill: black" style = "cursor: pointer" onclick = "openPointsOfInterest()">
       </svg>
@@ -53,6 +52,20 @@
       </div>
 
       <div id = "mainscreen">
+
+        <table id = "circleGrid">
+          <tr>
+            <td class = "choiceCircles">
+              <img src = "images/emptyCircle.png" id = "circle1" class = "circleImages" onclick="turnCircle1BarsPopularityOn()">
+            </td>
+          </tr>
+          <tr>
+            <td class = "choiceCircles">
+              <img src = "images/fullCircle.png" id = "circle2" class = "circleImages">
+            </td>
+          </tr>
+        </table>
+
         <table id = "filter">
           <tr>
             <td class = "filterChoice" id = "filter1">
@@ -74,12 +87,26 @@
 
         <table id = "POIcardsGrid">
           <tr>
-            <td class = "POIcards">
-            </td>
+              <td class = "POIcards" onclick="red_frog()">
+                  <div class = "cardsOpenText">
+                    <span>Closed - 18:00-02:00</span>
+                  </div>
+    
+                  <div class = "cardsNameSmaller">
+                    <span>Red Frog</span>
+                  </div>
+                </td>
           </tr>
           <tr>
-            <td class = "POIcards">
-            </td>
+              <td class = "POIcards" onclick="hard_rock()">
+                  <div class = "cardsOpenText">
+                    <span>Open - 10:00-01:00</span>
+                  </div>
+    
+                  <div class = "cardsNameSmaller">
+                    <span>Hard Rock Cafe</span>
+                  </div>
+                </td>
           </tr>
         </table>
 
