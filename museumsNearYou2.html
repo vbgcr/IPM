@@ -57,7 +57,7 @@
             </td>
           </tr>
           <tr>
-            <td class = "filterChoice" id = "filter2" onclick="turnCircle1PriceOn()">
+            <td class = "filterChoice" id = "filter2" onclick="turnCircle1PriceOnMuseums()">
               <span>Filter: Price</span>
             </td>
           </tr>
@@ -70,11 +70,25 @@
 
         <table id = "POIcardsGrid">
           <tr>
-            <td class = "POIcards">
+            <td class = "POIcards" onclick = "goToMaat()">
+              <div class = "cardsOpenText">
+                <span>Open - 10:00-19:00</span>
+              </div>
+
+              <div class = "cardsName">
+                <span>MAAT</span>
+              </div>
             </td>
           </tr>
           <tr>
-            <td class = "POIcards">
+            <td class = "POIcards" onclick = "goToOceanario()">
+              <div class = "cardsOpenText">
+                <span>Open - 10:00-18:00</span>
+              </div>
+
+              <div class = "cardsName">
+                <span>Oceanário</span>
+              </div>
             </td>
           </tr>
         </table>
