@@ -13,7 +13,7 @@
     <table id = "circleGrid">
       <tr>
         <td class = "choiceCircles">
-          <img src = "images/emptyCircle.png" id = "circle1" class = "circleImages" onclick="turnCircle1PopularityOn()">
+          <img src = "images/emptyCircle.png" id = "circle1" class = "circleImages" onclick="turnCircle1BarsPopularityOn()">
         </td>
       </tr>
       <tr>
@@ -87,12 +87,26 @@
 
         <table id = "POIcardsGrid">
           <tr>
-            <td class = "POIcards">
-            </td>
+              <td class = "POIcards" onclick="oito_nove()">
+                  <div class = "cardsOpenText">
+                    <span>Closed - 20:00-02:00</span>
+                  </div>
+    
+                  <div class = "cardsNameSmaller">
+                    <span>Oito Nove</span>
+                  </div>
+                </td>
           </tr>
           <tr>
-            <td class = "POIcards">
-            </td>
+              <td class = "POIcards" onclick="artesian()">
+                  <div class = "cardsOpenText">
+                    <span>Closed - 12:00-02:00</span>
+                  </div>
+    
+                  <div class = "cardsName">
+                    <span>Artesian</span>
+                  </div>
+                </td>
           </tr>
         </table>
 
