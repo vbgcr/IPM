@@ -286,10 +286,54 @@ function goToBarMap(){
   document.location.href = "barMap.html"
 }
 
+function goToMuseums(){
+  document.location.href = "museumsPopularity1.html";
+}
+
 function openMuseumMap(){
   document.location.href = "museumMap.html"
 }
 
 function goToMaatPrices(){
   document.location.href = "maatPrecos.html"
+}
+
+function goToFarmacia(){
+  document.location.href = "farmacia.html";
+}
+
+function goToCoches(){
+  document.location.href = "museuDosCoches.html";
+}
+
+function goToMaat(){
+  document.location.href = "maat.html";
+}
+
+function goToOceanario(){
+  document.location.href = "oceanario.html";
+}
+
+function turnCircle1PopularityOnMuseums(){
+  document.location.href = "museumsPopularity1.html";
+}
+
+function turnCircle2PopularityOnMuseums(){
+  document.location.href = "museumsPopularity2.html";
+}
+
+function turnCircle1PriceOnMuseums(){
+  document.location.href = "museumsPrice1.html";
+}
+
+function turnCircle2PriceOnMuseums(){
+  document.location.href = "museumsPrice2.html";
+}
+
+function turnCircle1NearYouOnMuseums(){
+  document.location.href = "museumsNearYou1.html";
+}
+
+function turnCircle2NearYouOnMuseums(){
+  document.location.href = "museumsNearYou2.html";
 }
