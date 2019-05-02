@@ -9,6 +9,20 @@
   </head>
   <body onload = "getTime() ; isDoNotDisturbOn()">
   <div id = "device">
+
+    <table id = "circleGrid">
+      <tr>
+        <td class = "choiceCircles">
+          <img src = "images/emptyCircle.png" id = "circle1" class = "circleImages" onclick="turnCircle1PriceOn()">
+        </td>
+      </tr>
+      <tr>
+        <td class = "choiceCircles">
+          <img src = "images/fullCircle.png" id = "circle2" class = "circleImages">
+        </td>
+      </tr>
+    </table>
+
     <div id = "buttons">
       <svg id = "button-div">
         <rect id = "button1" width = "10" height = "25" style ="fill:'black'" onclick = "relock()" style = "cursor: pointer">
@@ -39,24 +53,6 @@
 
       <div id = "mainscreen">
 
-        <table id = "circleGrid">
-          <tr>
-            <td class = "choiceCircles">
-              <img src = "images/emptyCircle.png" id = "circle1" class = "circleImages" onclick="turnCircle1PriceOn()">
-            </td>
-          </tr>
-          <tr>
-            <td class = "choiceCircles">
-              <img src = "images/fullCircle.png" id = "circle2" class = "circleImages">
-            </td>
-          </tr>
-          <tr>
-            <td class = "choiceCircles">
-              <img src = "images/emptyCircle.png" id = "circle3" class = "circleImages" onclick="turnCircle3PriceOn()">
-            </td>
-          </tr>
-        </table>
-
         <table id = "filter">
           <tr>
             <td class = "filterChoice" id = "filter1">
@@ -78,11 +74,25 @@
 
         <table id = "POIcardsGrid">
           <tr>
-            <td class = "POIcards">
+            <td class = "POIcards" onclick="goToBrasserie()">
+              <div class = "cardsOpenText" onclick="goToBrasserie()">
+                <span>Open(19:30-23:30)</span>
+              </div>
+
+              <div class = "cardsNameSmaller" onclick="goToBrasserie()">
+                <span>La Brasserie</span>
+              </div>
             </td>
           </tr>
           <tr>
-            <td class = "POIcards">
+            <td class = "POIcards" onclick="goToCantinho()">
+              <div class = "cardsOpenText" onclick="goToCantinho()">
+                <span>Closed(19:00-24:00)</span>
+              </div>
+
+              <div class = "cardsNameSmaller" onclick="goToCantinho()">
+                <span>Cantinho do Avillez</span>
+              </div>
             </td>
           </tr>
         </table>
