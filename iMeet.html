@@ -19,7 +19,7 @@
       </svg>
 
       <svg id = "button-div3">
-        <rect id = "button3" width = "25" height = "6" style = "fill: black" style = "cursor: pointer">
+        <rect id = "button3" width = "25" height = "6" style = "fill: black" style = "cursor: pointer" onclick="goToHomeScreen()">
       </svg>
 
     </div>
@@ -40,23 +40,26 @@
       </div>
 
       <div id = "mainscreen">
-        <table id = "app-grid" width = "100%">
+        <table id = "iMeetGrid">
           <tr>
-            <td class = "icon" id = "screen-division" width = "25%" align="center">
-              <img src = "images/redpinwhitecircle.png" width="60" onclick="openPointsOfInterest()">
-            </td>
-            <td class = "icon" id = "screen-division" width = "25%" align="center">
-              <img src = "images/redGroupWhiteCircle.png" width="60" onclick="goToIMeet()">
+            <td class = "iMeetOptions">
+              <span>Profile</span>
             </td>
           </tr>
           <tr>
-            <td  class = "icon" id = "screen-division" width = "25%" align="center">
-              <img src = "images/redHeartWhiteCircle.png" width="60" onclick="goToVitalsScreen()">
-            </td>
-            <td class = "icon" id = "screen-division" width = "25%" align="center">
-              <img src = "images/redSettingsWhiteCircle.png" width="60" onclick = "goToSettingsScreen()">
+            <td class = "iMeetOptions" onclick="goToFriends()">
+              <span>Friends</span>
+              <img id = "friendsFive" src="images/fiveBlue.png">
             </td>
           </tr>
+          <tr>
+            <td class = "iMeetOptions" onclick="goToGroups()">
+              <span>Groups</span>
+              <img id = "GroupsOne" src="images/oneRed.png">
+              <img id = "GroupsZero" src="images/zeroBlue.png">
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
 </body>

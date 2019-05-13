@@ -337,3 +337,15 @@ function turnCircle1NearYouOnMuseums(){
 function turnCircle2NearYouOnMuseums(){
   document.location.href = "museumsNearYou2.html";
 }
+
+function goToIMeet(){
+  document.location.href = "iMeet.html";
+}
+
+function goToGroups(){
+  document.location.href = "iMeetGroups.html";
+}
+
+function goToFriends(){
+  document.location.href = "iMeetFriends.html"
+}
