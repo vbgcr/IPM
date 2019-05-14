@@ -349,3 +349,7 @@ function goToGroups(){
 function goToFriends(){
   document.location.href = "iMeetFriends.html"
 }
+
+function goToProfileZe(){
+  document.location.href = "profileZe.html"
+}

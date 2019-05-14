@@ -789,8 +789,9 @@ body {
   background-color: white;
   left: 15px;
   top: 4px;
-  border: 1px solid black;
   position: absolute;
+  overflow: scroll;
+  scrollbar-width: none;
 }
 
 #secondaryScreenFriends{
@@ -799,21 +800,43 @@ body {
   background-color: white;
   left: 15px;
   top: 4px;
-  border: 1px solid black;
   position: absolute;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: scroll;
   scrollbar-width: none;
 }
 
 #friendsTable{
-  font-size: 17px;
+  font-size: 20px;
   border-collapse: collapse;
+  width: inherit;
+  table-layout: fixed;
+}
+
+#groupsTable{
+  font-size: 20px;
+  border-collapse: collapse;
+  width: inherit;
+  table-layout: fixed;
+}
+
+.group{
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color:#B5B3B7;
 }
 
 .friend{
   border: 1px solid black;
   border-radius: 5px;
-  background-color:#B5B3B7
+  background-color:#B5B3B7;
+}
+
+.friendPhoto{
+  width: 30%;
+}
+
+.friendName{
 }
 
 .locationOff{
@@ -822,6 +845,30 @@ body {
 
 .locationOn{
   width: 0.5cm;
+}
+
+.photo{
+  width: 1cm;
+}
+
+.profilePhoto{
+  width: 1.9cm;
+  left: 1.6cm;
+  top: 0.1cm;
+  position: absolute;
+}
+
+.profileName{
+  left: 0.6cm;
+  top: 2.05cm;
+  position: absolute;
+}
+
+.profileHandle{
+  font-size: 12px;
+  position: absolute;
+  top: 2.55cm;
+  left: 1.5cm;
 }
 
 /*SHAKE ANIMATION*/
