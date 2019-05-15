@@ -7,7 +7,7 @@
     <script src = "time.js"></script>
     <script src = "switch.js"></script>
   </head>
-  <body onload = "getTime() ; isDoNotDisturbOn()">
+  <body onload = "getTime() ; isDoNotDisturbOn() ; checkGroupNumber();">
   <div id = "device">
     <div id = "buttons">
       <svg id = "button-div">
@@ -55,8 +55,11 @@
           <tr>
             <td class = "iMeetOptions" onclick="goToGroups()">
               <span>Groups</span>
-              <img id = "GroupsOne" src="images/oneRed.png">
-              <img id = "GroupsZero" src="images/zeroBlue.png">
+              <img id = "GroupsOne" src="images/oneBlue.png">
+              <img id = "GroupsTwo" src="images/twoBlue.png">
+              <img id = "GroupsThree" src="images/threeBlue.png">
+              <img id = "GroupsFour" src="images/fourBlue.png">
+              <img id = "GroupsFive" src="images/fiveBlue.png">
             </td>
           </tr>
         </table>

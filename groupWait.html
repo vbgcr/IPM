@@ -7,7 +7,7 @@
     <script src = "time.js"></script>
     <script src = "switch.js"></script>
   </head>
-  <body onload = "getTime() ; isDoNotDisturbOn()">
+  <body onload = "getTime() ; isDoNotDisturbOn() ; waitForGroup()">
   <div id = "device">
     <div id = "buttons">
       <svg id = "button-div">
@@ -19,7 +19,7 @@
       </svg>
 
       <svg id = "button-div3">
-        <rect id = "button3" width = "25" height = "6" style = "fill: black" style = "cursor: pointer" onclick="goToFriends()">
+        <rect id = "button3" width = "25" height = "6" style = "fill: black" style = "cursor: pointer" onclick="goToIMeet()">
       </svg>
 
     </div>
@@ -40,16 +40,14 @@
       </div>
 
       <div id = "mainscreen">
-        <img class = "profilePhoto" src = "images/leAzul.png">
-        <span class = "profileNameLe">Tiago Lé</span>
-        <span class = "profileHandleLe">(@tigale)</span>
-        <rect class = "friendLocation" onclick = "goToFriendMap4()">
-          <img class = "friendLocationImage" src = "images/pinBlue.png">
-        </rect>
-        <rect class = "friendCall" onclick = "">
-          <img class = "friendCallImage" src = "images/phone-callGreen.png">
-        </rect>
+        <div id = "gettingVitals">
+          <span>Simulating Group Creation</span>
+        </div>
+        <div id = "loadingClock">
+          <img src = "images/clock.gif" width="40" height="40">
+        </div>
       </div>
     </div>
+  </div>
 </body>
 </html>
