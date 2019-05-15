@@ -20,6 +20,21 @@ body {
   overflow: hidden;
 }
 
+#screenOnCall{
+  width: 5cm;
+  height: 5cm;
+  display: block;
+  top: 50%;
+  left: 50%;
+  border: 5px solid black;
+  border-radius: 0.5cm;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: #B5B3B7;
+  /*#B5B3B7*/
+  overflow: hidden;
+}
+
 
 #ambulanceMenu{
   width: 4cm;
@@ -1017,6 +1032,67 @@ body {
   margin-top: 5px;
   margin-right: 21px;
 }
+
+#calling{
+  margin-top: 0.8cm;
+  margin-left: 1.7cm;
+}
+
+#callingText{
+  position: absolute; 
+  margin-top: 0.6cm;
+  margin-left: 1.6cm;
+  font-size: 20;
+  font-weight: bold;
+}
+
+#callNameAndreia{
+  font-size: 13;
+  font-weight: bold;
+  position: absolute;
+  top: 2.4cm;
+  left: 0.6cm;
+}
+
+#callNameJoao{
+  font-size: 13;
+  font-weight: bold;
+  position: absolute;
+  top: 2.4cm;
+  left: 1cm;
+}
+
+#callNamePacheco{
+  font-size: 13;
+  font-weight: bold;
+  position: absolute;
+  top: 2.4cm;
+  left: 0.6cm;
+}
+
+#hangUpCall{
+  position: absolute;
+  top: 3.1cm;
+  left: 2.05cm;
+  cursor: pointer;
+}
+
+#callEnded{
+  font-size: 16;
+  font-weight: bold;
+  position: absolute;
+  top: 2.7cm;
+  left: 1.4cm;
+}
+
+/*CALL TIMER*/
+#timer{
+  top: 2.7cm;
+  left: 2cm;
+  position: absolute;
+}
+/*CALL TIMER*/
+
 /*SHAKE ANIMATION*/
 
 @-webkit-keyframes spaceboots {
