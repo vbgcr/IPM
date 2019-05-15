@@ -820,6 +820,12 @@ body {
   table-layout: fixed;
 }
 
+#groupsTable{
+  font-size: 20px;
+  border-collapse: collapse;
+  width: inherit;
+  table-layout: fixed;
+}
 .group{
   border: 1px solid black;
   border-radius: 5px;
@@ -972,7 +978,6 @@ body {
   width: 0.8cm;
   margin-top: 7px;
 }
-
 /*SHAKE ANIMATION*/
 
 @-webkit-keyframes spaceboots {

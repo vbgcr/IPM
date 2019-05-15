@@ -355,7 +355,6 @@ function goToFriends(){
 function goToProfileZe(){
   document.location.href = "profileZe.html"
 }
-
 function goToProfileAndreia(){
   document.location.href = "profileAndreia.html"
 }
