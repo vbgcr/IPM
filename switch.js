@@ -53,6 +53,7 @@ function turnOnDoNotDisturb(){
   }
   else{
     document.getElementById("smallDoNotDisturb").style.visibility = "visible"
+    sessionStorage.setItem("doNotDisturbIsOn", "visible");
   }
 
 }
@@ -60,6 +61,7 @@ function turnOnDoNotDisturb(){
 function isDoNotDisturbOn(){
   if(sessionStorage.getItem("doNotDisturbIsOn") == "visible"){
     document.getElementById("smallDoNotDisturb").style.visibility = "visible";
+    sessionStorage.setItem("doNotDisturbIsOn", "visible");
   }
 }
 
@@ -348,4 +350,28 @@ function goToGroups(){
 
 function goToFriends(){
   document.location.href = "iMeetFriends.html"
+}
+
+function goToProfileZe(){
+  document.location.href = "profileZe.html"
+}
+
+function goToProfileAndreia(){
+  document.location.href = "profileAndreia.html"
+}
+
+function goToProfileLe(){
+  document.location.href = "profileLe.html"
+}
+
+function goToProfilePacheco(){
+  document.location.href = "profilePacheco.html"
+}
+
+function goToProfileJoao(){
+  document.location.href = "profileJoao.html"
+}
+
+function goToProfileVasco(){
+  document.location.href = "profileVasco.html"
 }
