@@ -35,7 +35,6 @@ body {
   overflow: hidden;
 }
 
-
 #ambulanceMenu{
   width: 4cm;
   height: 3cm;
@@ -846,7 +845,6 @@ body {
   border-radius: 5px;
   background-color:#B5B3B7;
   cursor: pointer;
-}
 
 .friend{
   border: 1px solid black;
