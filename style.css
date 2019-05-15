@@ -820,6 +820,12 @@ body {
   table-layout: fixed;
 }
 
+#groupsTable{
+  font-size: 20px;
+  border-collapse: collapse;
+  width: inherit;
+  table-layout: fixed;
+}
 .group{
   border: 1px solid black;
   border-radius: 5px;
@@ -830,6 +836,7 @@ body {
   border: 1px solid black;
   border-radius: 5px;
   background-color:#B5B3B7;
+  cursor: pointer;
 }
 
 .friendPhoto{
@@ -871,6 +878,106 @@ body {
   left: 1.5cm;
 }
 
+.profileNameAndreia{
+  left: 1cm;
+  top: 2.05cm;
+  position: absolute;
+}
+
+.profileHandleAndreia{
+  font-size: 12px;
+  position: absolute;
+  top: 2.55cm;
+  left: 1.7cm;
+}
+
+.profileNameLe{
+  left: 1.7cm;
+  top: 2.05cm;
+  position: absolute;
+}
+
+.profileHandleLe{
+  font-size: 12px;
+  position: absolute;
+  top: 2.55cm;
+  left: 1.85cm;
+}
+
+.profileNamePacheco{
+  left: 1.1cm;
+  top: 2.05cm;
+  position: absolute;
+}
+
+.profileHandlePacheco{
+  font-size: 12px;
+  position: absolute;
+  top: 2.55cm;
+  left: 1.65cm;
+}
+
+.profileNameJoao{
+  left: 1cm;
+  top: 2.05cm;
+  position: absolute;
+}
+
+.profileHandleJoao{
+  font-size: 12px;
+  position: absolute;
+  top: 2.55cm;
+  left: 1.4cm;
+}
+
+.profileNameVasco{
+  left: 0.95cm;
+  top: 2.05cm;
+  position: absolute;
+}
+
+.profileHandleVasco{
+  font-size: 12px;
+  position: absolute;
+  top: 2.55cm;
+  left: 1.8cm;
+}
+
+.friendLocation{
+  width: 1.1cm;
+  height: 1.1cm;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #B5B3B7;
+  position: absolute;
+  margin-left: 34px;
+  top: 120px;
+  cursor: pointer;
+}
+
+.friendLocationImage{
+  width: 0.8cm;
+  margin-top: 5px;
+}
+
+.friendCall{
+  width: 1.1cm;
+  height: 1.1cm;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #B5B3B7;
+  position: absolute;
+  margin-left: 110px;
+  top: 120px;
+  cursor: pointer;
+}
+
+.friendCallImage{
+  width: 0.8cm;
+  margin-top: 7px;
+}
 /*SHAKE ANIMATION*/
 
 @-webkit-keyframes spaceboots {
