@@ -284,6 +284,10 @@ function goToRestaurantsMap(){
   document.location.href = "restaurantMap.html"
 }
 
+function goToRestaurantsMap2(){
+  document.location.href = "restaurantMap2.html"
+}
+
 function goToBarMap(){
   document.location.href = "barMap.html"
 }
@@ -355,6 +359,7 @@ function goToFriends(){
 function goToProfileZe(){
   document.location.href = "profileZe.html"
 }
+
 function goToProfileAndreia(){
   document.location.href = "profileAndreia.html"
 }
@@ -363,8 +368,16 @@ function goToProfileLe(){
   document.location.href = "profileLe.html"
 }
 
+function goToProfileLe2(){
+  document.location.href = "profileLe2.html"
+}
+
 function goToProfilePacheco(){
   document.location.href = "profilePacheco.html"
+}
+
+function goToProfilePacheco2(){
+  document.location.href = "profilePacheco2.html"
 }
 
 function goToProfileJoao(){
@@ -375,104 +388,200 @@ function goToProfileVasco(){
   document.location.href = "profileVasco.html"
 }
 
-function goToDeckersGroup(){
-  document.location.href = "groupDeckers.html";
+function goToFriendMap1(){
+  document.location.href = "friendMap1.html";
 }
 
-function callDeckers(){
-  document.location.href = "callDeckers.html";
+function goToFriendMap2(){
+  document.location.href = "friendMap2.html";
 }
 
-function callFriendDeckers(){
-  setTimeout(startCallWithDeckers, 3000);
+function goToFriendMap3(){
+  document.location.href = "friendMap3.html";
 }
 
-function startCallWithDeckers(){
-  document.location.href = "onCallDeckers.html";
+function goToFriendMap4(){
+  document.location.href = "friendMap4.html";
 }
 
-function hangUpDeckers(){
-  document.location.href = "hangUpDeckers.html";
+function goToFriendMap5(){
+  document.location.href = "friendMap5.html";
 }
 
-function hangUpTimerDeckers(){
-  setTimeout(endCallWithDeckers, 1750);
+function goToBigMap(){
+  document.location.href = "bigMap.html";
 }
 
-function endCallWithDeckers(){
-  document.location.href = "profileAndreia.html";
+function addNewGroup(){
+  if(sessionStorage.getItem("groupCounter") == 3){
+    document.getElementById("group2").style.visibility = "visible";
+    document.getElementById("group3").style.visibility = "visible";
+    sessionStorage.setItem("groupCounter", 4);
+  }
+
+  else if(sessionStorage.getItem("groupCounter") == 4){
+    document.getElementById("group2").style.visibility = "visible";
+    document.getElementById("group3").style.visibility = "visible";
+    document.getElementById("group4").style.visibility = "visible";
+    sessionStorage.setItem("groupCounter", 5);
+  }
+
+  else if(sessionStorage.getItem("groupCounter") == 5){
+    document.getElementById("group2").style.visibility = "visible";
+    document.getElementById("group3").style.visibility = "visible";
+    document.getElementById("group4").style.visibility = "visible";
+    document.getElementById("group5").style.visibility = "visible";
+    sessionStorage.setItem("groupCounter", 6);
+  }
+
+  else if(sessionStorage.getItem("groupCounter") == 6){
+    sessionStorage.setItem("groupCounter", 7)
+  }
+
+  else{
+    sessionStorage.setItem("groupCounter", 3);
+    document.getElementById("group2").style.visibility = "visible";
+  }
 }
 
-function callJoao(){
-  document.location.href = "callJoao.html";
+function checkGroups(){
+  if(sessionStorage.getItem("groupCounter") == 3){
+    document.getElementById("group2").style.visibility = "visible";
+  }
+
+  if(sessionStorage.getItem("groupCounter") == 4){
+    document.getElementById("group2").style.visibility = "visible";
+    document.getElementById("group3").style.visibility = "visible";
+  }
+
+  if(sessionStorage.getItem("groupCounter") == 5){
+    document.getElementById("group2").style.visibility = "visible";
+    document.getElementById("group3").style.visibility = "visible";
+    document.getElementById("group4").style.visibility = "visible";
+  }
+
+  if(sessionStorage.getItem("groupCounter") == 6){
+    document.getElementById("group2").style.visibility = "visible";
+    document.getElementById("group3").style.visibility = "visible";
+    document.getElementById("group4").style.visibility = "visible";
+    document.getElementById("group5").style.visibility = "visible";
+  }
+
+  if(sessionStorage.getItem("groupCounter") == 7){
+    document.getElementById("group2").style.visibility = "visible";
+    document.getElementById("group3").style.visibility = "visible";
+    document.getElementById("group4").style.visibility = "visible";
+    document.getElementById("group5").style.visibility = "visible";
+  }
 }
 
-function callFriendJoao(){
-  setTimeout(startCallWithJoao, 3000);
+function checkGroupNumber(){
+  if(sessionStorage.getItem("groupCounter") == 3){
+    document.getElementById("GroupsTwo").style.visibility = "visible";
+  }
+
+  else if(sessionStorage.getItem("groupCounter") == 4){
+    document.getElementById("GroupsThree").style.visibility = "visible";
+  }
+
+  else if(sessionStorage.getItem("groupCounter") == 5){
+    document.getElementById("GroupsFour").style.visibility = "visible";
+  }
+
+  else if(sessionStorage.getItem("groupCounter") == 6){
+    document.getElementById("GroupsFive").style.visibility = "visible";
+  }
+
+  else if(sessionStorage.getItem("groupCounter") == 7){
+    document.getElementById("GroupsFive").style.visibility = "visible";
+  }
+
+  else{
+    document.getElementById("GroupsOne").style.visibility = "visible";
+  }
 }
 
-function startCallWithJoao(){
-  document.location.href = "onCallJoao.html";
+function goToYourGroup0(){
+  document.location.href = "pachecoGroup.html"
 }
 
-function hangUpJoao(){
-  document.location.href = "hangUpJoao.html";
+function goToYourGroup1(){
+  document.location.href = "yourGroup1.html"
 }
 
-function hangUpTimerJoao(){
-  setTimeout(endCallWithJoao, 1750);
+function goToYourGroup2(){
+  document.location.href = "yourGroup2.html"
 }
 
-function endCallWithJoao(){
-  document.location.href = "profileJoao.html";
+function goToYourGroup3(){
+  document.location.href = "yourGroup3.html"
 }
 
-function callPacheco(){
-  document.location.href = "callPacheco.html";
+function goToYourGroup4(){
+  document.location.href = "yourGroup4.html"
 }
 
-function callFriendPacheco(){
-  setTimeout(startCallWithPacheco, 3000);
-}
-
-function startCallWithPacheco(){
-  document.location.href = "onCallPacheco.html";
-}
-
-function hangUpPacheco(){
-  document.location.href = "hangUpPacheco.html";
-}
-
-function hangUpTimerPacheco(){
-  setTimeout(endCallWithPacheco, 1750);
-}
-
-function endCallWithPacheco(){
-  document.location.href = "profilePacheco.html";
-}
-
-/*TESTE DE TIMER*/
-var minutesLabel = document.getElementById("minutes");
-var secondsLabel = document.getElementById("seconds");
-var totalSeconds = 0;
-
-function startCounting(){
-  setInterval(setTime, 1000);
-}
-
-function setTime(){
-++totalSeconds;
-secondsLabel.innerHTML = pad(totalSeconds%60);
-minutesLabel.innerHTML = pad(parseInt(totalSeconds/60));
-}
-
-function pad(val){
-  var valString = val + "";
-  if(valString.length < 2){
-    return "0" + valString;
+function showMembers1(){
+  if(document.getElementById("secondaryScreenMembers1").style.visibility == "visible"){
+    document.getElementById("secondaryScreenMembers1").style.visibility = "hidden";
   }
   else{
-    return valString;
+    document.getElementById("secondaryScreenMembers1").style.visibility = "visible";
   }
 }
-/*TESTE TIMER*/
+
+function showMembers2(){
+  if(document.getElementById("secondaryScreenMembers2").style.visibility == "visible"){
+    document.getElementById("secondaryScreenMembers2").style.visibility = "hidden";
+  }
+  else{
+    document.getElementById("secondaryScreenMembers2").style.visibility = "visible";
+  }
+}
+
+function showMembers3(){
+  if(document.getElementById("secondaryScreenMembers3").style.visibility == "visible"){
+    document.getElementById("secondaryScreenMembers3").style.visibility = "hidden";
+  }
+  else{
+    document.getElementById("secondaryScreenMembers3").style.visibility = "visible";
+  }
+}
+
+function showMembers4(){
+  if(document.getElementById("secondaryScreenMembers4").style.visibility == "visible"){
+    document.getElementById("secondaryScreenMembers4").style.visibility = "hidden";
+  }
+  else{
+    document.getElementById("secondaryScreenMembers4").style.visibility = "visible";
+  }
+}
+
+function showMembers0(){
+  if(document.getElementById("secondaryScreenMembers0").style.visibility == "visible"){
+    document.getElementById("secondaryScreenMembers0").style.visibility = "hidden";
+  }
+  else{
+    document.getElementById("secondaryScreenMembers0").style.visibility = "visible";
+  }
+}
+
+function goToMeetingPoint1(){
+  document.location.href = "meetingPoint1.html"
+}
+
+function goToMeetingPoint2(){
+  document.location.href = "meetingPoint2.html"
+}
+
+function goToMeetingPoint3(){
+  document.location.href = "meetingPoint3.html"
+}
+
+function goToMeetingPoint4(){
+  document.location.href = "meetingPoint4.html"
+}
+
+function goToMeetingPoint0(){
+  document.location.href = "meetingPoint0.html"
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE>
+<html>
+  <head>
+
+    <title>iGo</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "time.js"></script>
+    <script src = "switch.js"></script>
+  </head>
+  <body onload = "getTime() ; isDoNotDisturbOn()">
+  <div id = "device">
+    <div id = "buttons">
+      <svg id = "button-div">
+        <rect id = "button1" width = "10" height = "25" style ="fill:'black'" onclick = "relock()" style = "cursor: pointer">
+      </svg>
+
+      <svg id = "button-div2">
+        <rect id = "button2" width = "30" height = "10" style ="fill: black" style = "cursor: pointer" onclick="goToHomeScreen()">
+      </svg>
+
+      <svg id = "button-div3">
+        <rect id = "button3" width = "25" height = "6" style = "fill: black" style = "cursor: pointer" onclick="goToGroups()">
+      </svg>
+
+    </div>
+    <div id = "screen">
+
+      <div id = "screentop">
+        <p id = "time"></p>
+        <table id = "screentopIcons" width = "15%">
+          <tr>
+            <td class = "smallIcon" id = "smallPin" width = "50%" allign = "center">
+              <img src = "images/pin.png" width="13">
+            </td>
+            <td class = "smallIcon" id = "smallDoNotDisturb" width = "50%" allign = "center">
+              <img src = "images/DoNotDisturb.png" width="13">
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id = "mainscreen">
+        <div class = "adminScreen">
+          <div id = "secondaryScreenMembers3" class = "secondaryScreenMembers">
+            <table id = "friendsTable">
+              <tr class = "friend" onclick="goToProfileAndreia()">
+                <td class = "friendPhoto">
+                    <img class = "photo" src = "images/andreiaAzul.png">
+                </td>
+                <td class = "friendName">
+                    <span>Andreia Pereira</span>
+                </td>
+              </tr>
+              <tr class = "friend" onclick="goToProfileLe()">
+                <td class = "friendPhoto">
+                    <img class = "photo" src = "images/leAzul.png">
+                </td>
+                <td class = "friendName">
+                    <span>Tiago Lé</span>
+                </td>
+              </tr>
+              <tr class = "friend" onclick="goToProfileJoao()">
+                <td class = "friendPhoto">
+                    <img class = "photo" src = "images/zeAzul.png">
+                </td>
+                <td class = "friendName">
+                    <span>Zé Maria Maldonado</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <span class = "groupCreatorName">Group Creator</span>
+          <img class = "profilePhotoGroup" src = images/zeAzul.png >
+          <rect class = "groupLocation" onclick = "goToMeetingPoint3()">
+            <img class = "groupLocationImage" src = "images/pinBlue.png">
+          </rect>
+          <rect class = "groupMembers" onclick = "showMembers3()">
+            <img class = "groupMembersImage" src = "images/groupNormal.png">
+          </rect>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

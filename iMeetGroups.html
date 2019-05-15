@@ -7,7 +7,7 @@
     <script src = "time.js"></script>
     <script src = "switch.js"></script>
   </head>
-  <body onload = "getTime() ; isDoNotDisturbOn()">
+  <body onload = "getTime() ; isDoNotDisturbOn() ; checkGroups()">
   <div id = "device">
     <div id = "buttons">
       <svg id = "button-div">
@@ -43,50 +43,50 @@
         <div>
           <div id = "secondaryScreen">
             <table id = "groupsTable">
-              <tr class = "group" onclick="goToDeckersGroup()">
-                <td class = "friendPhoto">
-                    <img class = "photo" src = "images/groupBlue.png">
+              <tr class = "group" id = "group1" onclick="goToYourGroup0()">
+                <td class = "groupPhoto" id = "groupPhoto1">
+                    <img class = "photo" src = "images/pachecoAzul.png">
                 </td>
-                <td class = "friendName">
-                    <span>Group 1</span>
-                </td>
-              </tr>
-              <tr class = "group">
-                <td class = "friendPhoto">
-                    <img class = "photo" src = "images/groupBlue.png">
-                </td>
-                <td class = "friendName">
-                    <span>Group 1</span>
+                <td class = "groupName" id = "groupName1">
+                    <span>Pacheco's Group</span>
                 </td>
               </tr>
-              <tr class = "group">
-                <td class = "friendPhoto">
-                    <img class = "photo" src = "images/groupBlue.png">
+              <tr class = "group" id = "group2" onclick="goToYourGroup1()">
+                <td class = "groupPhoto" id = "groupPhoto2">
+                    <img class = "photo" src = "images/zeAzul.png">
                 </td>
-                <td class = "friendName">
-                    <span>Group 1</span>
-                </td>
-              </tr>
-              <tr class = "group">
-                <td class = "friendPhoto">
-                    <img class = "photo" src = "images/groupBlue.png">
-                </td>
-                <td class = "friendName">
-                    <span>Group 1</span>
+                <td class = "groupName" id = "groupName2">
+                    <span>Your Group 1</span>
                 </td>
               </tr>
-              <tr class = "group">
-                <td class = "friendPhoto">
-                    <img class = "photo" src = "images/groupBlue.png">
+              <tr class = "group" id = "group3" onclick="goToYourGroup2()">
+                <td class = "groupPhoto" id = "groupPhoto3">
+                    <img class = "photo" src = "images/zeAzul.png">
                 </td>
-                <td class = "friendName">
-                    <span>Group 1</span>
+                <td class = "groupName" id = "groupName3">
+                    <span>Your Group 2</span>
+                </td>
+              </tr>
+              <tr class = "group" id = "group4" onclick="goToYourGroup3()">
+                <td class = "groupPhoto" id = "groupPhoto4">
+                    <img class = "photo" src = "images/zeAzul.png">
+                </td>
+                <td class = "groupName" id = "groupName4">
+                    <span>Your Group 3</span>
+                </td>
+              </tr>
+              <tr class = "group" id = "group5" onclick="goToYourGroup4()">
+                <td class = "groupPhoto" id = "groupPhoto5">
+                    <img class = "photo" src = "images/zeAzul.png">
+                </td>
+                <td class = "groupName" id = "groupName5">
+                    <span>Your Group 4</span>
                 </td>
               </tr>
             </table>
           </div>
         </div>
-        <img id = "addGroupIcon" src = "images/plus.png">
+        <img id = "addGroupIcon" src = "images/plus.png" onclick="addNewGroup()">
       </div>
     </div>
 </body>
