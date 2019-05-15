@@ -374,3 +374,105 @@ function goToProfileJoao(){
 function goToProfileVasco(){
   document.location.href = "profileVasco.html"
 }
+
+function goToDeckersGroup(){
+  document.location.href = "groupDeckers.html";
+}
+
+function callDeckers(){
+  document.location.href = "callDeckers.html";
+}
+
+function callFriendDeckers(){
+  setTimeout(startCallWithDeckers, 3000);
+}
+
+function startCallWithDeckers(){
+  document.location.href = "onCallDeckers.html";
+}
+
+function hangUpDeckers(){
+  document.location.href = "hangUpDeckers.html";
+}
+
+function hangUpTimerDeckers(){
+  setTimeout(endCallWithDeckers, 1750);
+}
+
+function endCallWithDeckers(){
+  document.location.href = "profileAndreia.html";
+}
+
+function callJoao(){
+  document.location.href = "callJoao.html";
+}
+
+function callFriendJoao(){
+  setTimeout(startCallWithJoao, 3000);
+}
+
+function startCallWithJoao(){
+  document.location.href = "onCallJoao.html";
+}
+
+function hangUpJoao(){
+  document.location.href = "hangUpJoao.html";
+}
+
+function hangUpTimerJoao(){
+  setTimeout(endCallWithJoao, 1750);
+}
+
+function endCallWithJoao(){
+  document.location.href = "profileJoao.html";
+}
+
+function callPacheco(){
+  document.location.href = "callPacheco.html";
+}
+
+function callFriendPacheco(){
+  setTimeout(startCallWithPacheco, 3000);
+}
+
+function startCallWithPacheco(){
+  document.location.href = "onCallPacheco.html";
+}
+
+function hangUpPacheco(){
+  document.location.href = "hangUpPacheco.html";
+}
+
+function hangUpTimerPacheco(){
+  setTimeout(endCallWithPacheco, 1750);
+}
+
+function endCallWithPacheco(){
+  document.location.href = "profilePacheco.html";
+}
+
+/*TESTE DE TIMER*/
+var minutesLabel = document.getElementById("minutes");
+var secondsLabel = document.getElementById("seconds");
+var totalSeconds = 0;
+
+function startCounting(){
+  setInterval(setTime, 1000);
+}
+
+function setTime(){
+++totalSeconds;
+secondsLabel.innerHTML = pad(totalSeconds%60);
+minutesLabel.innerHTML = pad(parseInt(totalSeconds/60));
+}
+
+function pad(val){
+  var valString = val + "";
+  if(valString.length < 2){
+    return "0" + valString;
+  }
+  else{
+    return valString;
+  }
+}
+/*TESTE TIMER*/
