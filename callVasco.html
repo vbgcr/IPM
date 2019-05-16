@@ -1,0 +1,53 @@
+<!DOCTYPE = "html">
+<html>
+  <head>
+
+    <title>iGo</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "time.js"></script>
+    <script src = "switch.js"></script>
+  </head>
+  <body onload = "getTime() ; isDoNotDisturbOn(); callFriendVasco()">
+  <div id = "device">
+    <div id = "buttons">
+      <svg id = "button-div">
+        <rect id = "button1" width = "10" height = "25" style ="fill:'black'" onclick = "relock()" style = "cursor: pointer">
+      </svg>
+
+      <svg id = "button-div2">
+        <rect id = "button2" width = "30" height = "10" style ="fill: black" style = "cursor: pointer" onclick="goToHomeScreen()">
+      </svg>
+
+      <svg id = "button-div3">
+        <rect id = "button3" width = "25" height = "6" style = "fill: black" style = "cursor: pointer" onclick="goToIMeet()">
+      </svg>
+
+    </div>
+    <div id = "screen">
+
+      <div id = "screentop">
+        <p id = "time"></p>
+        <table id = "screentopIcons" width = "15%">
+          <tr>
+            <td class = "smallIcon" id = "smallPin" width = "50%" allign = "center">
+              <img src = "images/pin.png" width="13">
+            </td>
+            <td class = "smallIcon" id = "smallDoNotDisturb" width = "50%" allign = "center">
+              <img src = "images/DoNotDisturb.png" width="13">
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id = "mainscreen">
+            <div id = "calling" class="shake">
+                <img src = "images/phone-callGreen.png" width = "60">
+            </div>
+
+            <span id = "callingText">Calling ...</span>
+      </div>
+
+    </div>
+  </div>
+  </body>
+</html>
