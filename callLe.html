@@ -7,7 +7,7 @@
     <script src = "time.js"></script>
     <script src = "switch.js"></script>
   </head>
-  <body onload = "getTime() ; isDoNotDisturbOn(); hangUpTimerPacheco()">
+  <body onload = "getTime() ; isDoNotDisturbOn(); callFriendLe()">
   <div id = "device">
     <div id = "buttons">
       <svg id = "button-div">
@@ -40,8 +40,11 @@
       </div>
 
       <div id = "mainscreen">
-            <img class = "profilePhoto" src = "images/pachecoAzul.png">
-            <span id = "callEnded">Call Ended</span>
+            <div id = "calling" class="shake">
+                <img src = "images/phone-callGreen.png" width = "60">
+            </div>
+
+            <span id = "callingText">Calling ...</span>
       </div>
 
     </div>
