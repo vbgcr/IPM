@@ -252,6 +252,10 @@ function goToCantinho(){
   document.location.href = "cantinho.html";
 }
 
+function goToCantinho2(){
+  document.location.href = "cantinho.html";
+}
+
 function goToHorta(){
   document.location.href = "horta.html";
 }
@@ -362,6 +366,10 @@ function goToProfileZe(){
 
 function goToProfileAndreia(){
   document.location.href = "profileAndreia.html"
+}
+
+function goToProfileAndreia1(){
+  document.location.href = "profileAndreia.html";
 }
 
 function goToProfileLe(){
@@ -584,4 +592,133 @@ function goToMeetingPoint4(){
 
 function goToMeetingPoint0(){
   document.location.href = "meetingPoint0.html"
+}
+
+function callDeckers(){
+  document.location.href = "callDeckers.html";
+}
+
+function callFriendDeckers(){
+  setTimeout(startCallWithDeckers, 3000);
+}
+
+function startCallWithDeckers(){
+  document.location.href = "onCallDeckers.html";
+}
+
+function hangUpDeckers(){
+  document.location.href = "hangUpDeckers.html";
+}
+
+function hangUpTimerDeckers(){
+  setTimeout(endCallWithDeckers, 1750);
+}
+
+function endCallWithDeckers(){
+  document.location.href = "profileAndreia.html";
+}
+
+function callJoao(){
+  document.location.href = "callJoao.html";
+}
+
+function callLe(){
+  document.location.href = "callLe.html";
+}
+
+function callVasco(){
+  document.location.href = "callVasco.html";
+}
+
+function callFriendJoao(){
+  setTimeout(startCallWithJoao, 3000);
+}
+
+function startCallWithJoao(){
+  document.location.href = "onCallJoao.html";
+}
+
+function hangUpJoao(){
+  document.location.href = "hangUpJoao.html";
+}
+
+function hangUpTimerJoao(){
+  setTimeout(endCallWithJoao, 1750);
+}
+
+function endCallWithJoao(){
+  document.location.href = "profileJoao.html";
+}
+
+function callPacheco(){
+  document.location.href = "callPacheco.html";
+}
+
+function callFriendPacheco(){
+  setTimeout(startCallWithPacheco, 3000);
+}
+
+function startCallWithPacheco(){
+  document.location.href = "onCallPacheco.html";
+}
+
+function hangUpPacheco(){
+  document.location.href = "hangUpPacheco.html";
+}
+
+function hangUpTimerPacheco(){
+  setTimeout(endCallWithPacheco, 1750);
+}
+
+function endCallWithPacheco(){
+  document.location.href = "profilePacheco.html";
+}
+
+function callVasco(){
+  document.location.href = "callVasco.html";
+}
+
+function callFriendVasco(){
+  setTimeout(startCallWithVasco, 3000);
+}
+
+function startCallWithVasco(){
+  document.location.href = "onCallVasco.html";
+}
+
+function hangUpVasco(){
+  document.location.href = "hangUpVasco.html";
+}
+
+function hangUpTimerVasco(){
+  setTimeout(endCallWithVasco, 1750);
+}
+
+function endCallWithVasco(){
+  document.location.href = "profileVasco.html";
+}
+
+
+function callLe(){
+  document.location.href = "callLe.html";
+}
+
+function callFriendLe(){
+  setTimeout(startCallWithLe, 3000);
+}
+
+function startCallWithLe(){
+  document.location.href = "onCallLe.html";
+}
+
+function hangUpLe(){
+  document.location.href = "hangUpLe.html";
+}
+
+function hangUpTimerLe(){
+  setTimeout(endCallWithLe, 1750);
+}
+
+function endCallWithLe(){
+  document.location.href = "profileLe.html";
 }
